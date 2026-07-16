@@ -1,0 +1,101 @@
+@import "variables.css";
+
+body {
+  background-color: var(--color-bg);
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--color-glass-bg);
+  backdrop-filter: blur(8px);
+  border: solid 1px var(--color-glass-border);
+  .navbar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar__menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navbar__menu {
+    list-style: none;
+  }
+  .navbar__link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.hero {
+  .hero__container {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    background-image: url("./assets/img/cb-codesHero2.png");
+    background-position: center;
+    background-size: cover;
+
+    .hero__card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .hero__title {
+        width: fit-content;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: var(--color-text);
+        background-color: var(--color-glass-bg);
+        border: 1px solid var(--color-glass-border);
+      }
+      .hero__info {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-glass-bg);
+        border: 1px solid var(--color-glass-border);
+        color: var(--color-text-muted);
+      }
+      .hero__actions {
+        display: flex;
+
+        justify-content: space-evenly;
+      }
+      .hero__text {
+        font-size: 1.5;
+      }
+    }
+  }
+  .hero__btn {
+    color: var(--color-text);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.4s ease;
+    background-color: var(--color-secondary);
+    &:hover {
+      background-color: initial;
+      border-color: var(--color-border);
+      backdrop-filter: blur(8px);
+    }
+    &.hero__btn--secondary {
+      background-color: transparent;
+      border: 1px solid var(--color-border);
+      backdrop-filter: blur(8px);
+      &:hover {
+        background-color: var(--color-secondary);
+        border-color: transparent;
+      }
+    }
+  }
+}

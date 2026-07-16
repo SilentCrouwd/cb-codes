@@ -4,9 +4,65 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet_variables" href="src/variables.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>cb-codes</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="navbar">
+      <div class="navbar__container">
+        <!-- Navigations-Menü -->
+        <nav class="navbar__navigation">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="/" class="navbar__link navbar__link--active">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/ueber-mich" class="navbar__link">Über mich</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/kontakt" class="navbar__link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero hero--fullscreen">
+      <!-- Das bildschirmfüllende Hintergrundbild
+      <img
+        src="./src/assets/img/cb-codesHeroImg.png"
+        alt="Modernes Webdesign Hintergrund"
+        class="hero__image"
+      /> -->
+
+      <!-- Der zentrierte Inhalts-Container -->
+      <div class="hero__container">
+        <!-- Die schwebende Glasmorphismus-Box -->
+        <div class="hero__card">
+          <h1 class="hero__title">
+            Kreative Ideen digital
+            <span class="hero__title--gradient">wirksam</span> machen
+          </h1>
+          <div class="hero__info">
+            <p class="hero__text">
+              Wir bauen statische Websites mit maximaler Performance. Modern,
+              barrierefrei und blitzschnell dank Vite. Entdecke, wie wir Design
+              und Code verschmelzen lassen.
+            </p>
+
+            <div class="hero__actions">
+              <!-- Der farbige Button (Primary) -->
+              <a href="/kontakt" class="hero__btn hero__btn--primary"
+                >Projekt Übersicht</a
+              >
+              <!-- Der invertierte Button (Secondary) -->
+              <a href="/ueber-mich" class="hero__btn hero__btn--secondary"
+                >Mehr erfahren</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
