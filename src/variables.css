@@ -4,45 +4,63 @@
   /* ==========================================
      1. KOSTANTE PALETTE (Brand Colors)
      ========================================== */
-  --color-primary: #14b8a6;       /* Frisches Türkis */
-  --color-secondary: #8b5cf6;     /* Leuchtendes Violett */
-  
+
+  /* 3. Der minimalistische Rahmen (Glow) */
+  --shadow-glow: 0px 0px 5px 0px var(--color-secondary);
+  --color-primary: #14b8a6; /* Frisches Türkis */
+  --color-secondary: #8b5cf6; /* Leuchtendes Violett */
+  --bg-gradient: linear-gradient(to right, #14b8a6, #8b5cf6);
   /* Basis-Grautöne für die Boxen */
   --color-gray-box-light: #f1f5f9; /* Softes, klares Hellgrau */
-  --color-gray-box-dark: #1e293b;  /* Modernes, dunkles Schiefergrau */
+  --color-gray-box-dark: #1e293b; /* Modernes, dunkles Schiefergrau */
 
   /* ==========================================
      2. DYNAMISCHES THEME (Standard: Hellmodus)
      ========================================== */
-  --color-bg: #f8fafc;             /* Sehr heller Hintergrund */
-  --color-text: #0f172a;           /* Dunkles Schiefer-Anthrazit für beste Lesbarkeit */
-  --color-text-muted: #64748b;     /* Sanftes Grau für sekundäre Texte */
-  
+  --color-bg: #f8fafc; /* Sehr heller Hintergrund */
+  --color-text: #0f172a; /* Dunkles Schiefer-Anthrazit für beste Lesbarkeit */
+  --color-text-muted: #64748b; /* Sanftes Grau für sekundäre Texte */
+
   /* Box & Border */
   --color-box: var(--color-gray-box-light);
-  --color-border: var(--color-secondary); /* Border-Farbe ist standardmäßig Violett */
+  --color-border: var(
+    --color-secondary
+  ); /* Border-Farbe ist standardmäßig Violett */
 
   /* Glasmorphismus (Weiche, semi-transparente Optik) */
   --color-glass-bg: rgba(255, 255, 255, 0.4);
-  --color-glass-border: rgba(255, 255, 255, 0.6); /* Sehr helles Grau/Weiß für den Glaseffekt */
+  --color-glass-border: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Sehr helles Grau/Weiß für den Glaseffekt */
 }
+/* ==========================================
+   3.Boxschadow
+   ========================================== */
 
 /* ==========================================
-   3. AUTOMATISCHER DARKMODE (Systemeinstellung)
+   4. AUTOMATISCHER DARKMODE (Systemeinstellung)
    ========================================== */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0f172a;           /* Tiefes Dunkelblau-Grau */
-    --color-text: #f8fafc;         /* Klares, augenschonendes Off-White */
-    --color-text-muted: #94a3b8;   /* Helleres Grau für Nebentexte */
-    
+    --color-bg: #0f172a; /* Tiefes Dunkelblau-Grau */
+    --color-text: #f8fafc; /* Klares, augenschonendes Off-White */
+    --color-text-muted: #94a3b8; /* Helleres Grau für Nebentexte */
+
     /* Box & Border */
     --color-box: var(--color-gray-box-dark);
     /* Die Border bleibt auch im Darkmode Violett (deine Sekundärfarbe) */
-    
+
     /* Glasmorphismus im Darkmode */
     --color-glass-bg: rgba(15, 23, 42, 0.45);
-    --color-glass-border: rgba(255, 255, 255, 0.15); /* Dezenter, feiner Lichtrand im Dunkeln */
+    --color-glass-border: rgba(
+      255,
+      255,
+      255,
+      0.15
+    ); /* Dezenter, feiner Lichtrand im Dunkeln */
   }
 }
 

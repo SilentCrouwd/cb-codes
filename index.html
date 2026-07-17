@@ -18,51 +18,270 @@
               <a href="/" class="navbar__link navbar__link--active">Home</a>
             </li>
             <li class="navbar__item">
-              <a href="/ueber-mich" class="navbar__link">Über mich</a>
+              <a href="#service" class="navbar__link">Service</a>
             </li>
             <li class="navbar__item">
-              <a href="/kontakt" class="navbar__link">Kontakt</a>
+              <a href="#contact" class="navbar__link">Kontakt</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="hero hero--fullscreen">
-      <!-- Das bildschirmfüllende Hintergrundbild
-      <img
-        src="./src/assets/img/cb-codesHeroImg.png"
-        alt="Modernes Webdesign Hintergrund"
-        class="hero__image"
-      /> -->
+    <main>
+      <section class="hero hero--fullscreen">
+        <!-- Der zentrierte Inhalts-Container -->
+        <div class="hero__container">
+          <!-- Die schwebende Glasmorphismus-Box -->
+          <div class="hero__card">
+            <h1 class="hero__title">
+              Kreative Ideen digital
+              <span class="hero__title--gradient">wirksam</span> machen
+            </h1>
+            <div class="hero__info">
+              <p class="hero__text">
+                Wir bauen statische Websites mit maximaler Performance. Modern,
+                barrierefrei und blitzschnell dank Vite. Entdecke, wie wir
+                Design und Code verschmelzen lassen.
+              </p>
 
-      <!-- Der zentrierte Inhalts-Container -->
-      <div class="hero__container">
-        <!-- Die schwebende Glasmorphismus-Box -->
-        <div class="hero__card">
-          <h1 class="hero__title">
-            Kreative Ideen digital
-            <span class="hero__title--gradient">wirksam</span> machen
-          </h1>
-          <div class="hero__info">
-            <p class="hero__text">
-              Wir bauen statische Websites mit maximaler Performance. Modern,
-              barrierefrei und blitzschnell dank Vite. Entdecke, wie wir Design
-              und Code verschmelzen lassen.
-            </p>
-
-            <div class="hero__actions">
-              <!-- Der farbige Button (Primary) -->
-              <a href="/kontakt" class="hero__btn hero__btn--primary"
-                >Projekt Übersicht</a
-              >
-              <!-- Der invertierte Button (Secondary) -->
-              <a href="/ueber-mich" class="hero__btn hero__btn--secondary"
-                >Mehr erfahren</a
-              >
+              <div class="hero__actions">
+                <!-- Der farbige Button (Primary) -->
+                <a href="/kontakt" class="hero__btn hero__btn--primary"
+                  >Projekt Übersicht</a
+                >
+                <!-- Der invertierte Button (Secondary) -->
+                <a href="/ueber-mich" class="hero__btn hero__btn--secondary"
+                  >Mehr erfahren</a
+                >
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- Block: services -->
+      <section class="services" id="service">
+        <div class="services__container">
+          <header class="services__header">
+            <h2 class="services__title">Unsere Services</h2>
+          </header>
+
+          <div class="services__grid">
+            <!-- Eigenständiger Block: service-card (Karte 1) -->
+            <article class="service-card">
+              <div class="service-card__image-container">
+                <img
+                  src="src/assets/img/cb-codesLogo4.png"
+                  alt="Web Design Icon"
+                  class="service-card__image"
+                />
+              </div>
+              <h3 class="service-card__title">Web Design</h3>
+              <p class="service-card__text">
+                Moderne und funktionale Designs, die genau auf deine Zielgruppe
+                zugeschnitten sind.
+              </p>
+              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__image-container">
+                <img
+                  src="src/assets/img/cb-CodesHeroV4Breit.png"
+                  alt="Web Design Icon"
+                  class="service-card__image"
+                />
+              </div>
+              <h3 class="service-card__title">Web Design</h3>
+              <p class="service-card__text">
+                Moderne und funktionale Designs, die genau auf deine Zielgruppe
+                zugeschnitten sind.
+              </p>
+              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__image-container">
+                <img
+                  src="src/assets/img/cb-codesLogo4.png"
+                  alt="Web Design Icon"
+                  class="service-card__image"
+                />
+              </div>
+              <h3 class="service-card__title">Web Design</h3>
+              <p class="service-card__text">
+                Moderne und funktionale Designs, die genau auf deine Zielgruppe
+                zugeschnitten sind.
+              </p>
+              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__image-container">
+                <img
+                  src="src/assets/img/cb-CodesHeroV4Breit.png"
+                  alt="Web Design Icon"
+                  class="service-card__image"
+                />
+              </div>
+              <h3 class="service-card__title">Web Design</h3>
+              <p class="service-card__text">
+                Moderne und funktionale Designs, die genau auf deine Zielgruppe
+                zugeschnitten sind.
+              </p>
+              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Block: contact -->
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <header class="contact__header">
+            <h2 class="contact__title">Kontakt</h2>
+          </header>
+
+          <div class="contact__grid">
+            <!-- Linker Bereich: Kontaktdaten und Social Media -->
+            <div class="contact__content">
+              <p class="contact__text">
+                Schreib mir gerne eine Nachricht oder vernetze dich mit mir auf
+                meinen Kanälen!
+              </p>
+              <img
+                src="src/assets/img/cb-codesHerov3.png"
+                alt="Dein Name - Profilbild"
+                class="contact__image"
+              />
+              <!-- Eigenständiger Block: social-links -->
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-links__link" aria-label="E-Mail">
+                <svg
+                  class="social-links__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+              <a href="#" class="social-links__link" aria-label="Telefon">
+                <svg
+                  class="social-links__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="social-links__link" aria-label="Instagram">
+                <svg
+                  class="social-links__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+
+              <a href="#" class="social-links__link" aria-label="LinkedIn">
+                <svg
+                  class="social-links__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <a href="#" class="social-links__link" aria-label="GitHub">
+                <svg
+                  class="social-links__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="social-links__link" aria-label="Netlify">
+                <!-- Netlify SVG (Standard-Geometrie) -->
+                <svg
+                  class="social-links__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2L2 11.5l2 1.5L12 6.5l8 6.5 2-1.5L12 2z"></path>
+                  <path d="M12 22l10-9.5-2-1.5-8 6.5-8-6.5-2 1.5L12 22z"></path>
+                </svg>
+              </a>
+            </div>
+            <!-- Rechter Bereich: Dein Profilbild -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Block: footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Linker Bereich: Copyright oder Brand-Name -->
+        <div class="footer__copyright">
+          <p class="footer__text">
+            &copy; 2026 Dein Name. Alle Rechte vorbehalten.
+          </p>
+        </div>
+
+        <!-- Rechter Bereich / Eigenständiger Block: footer-nav -->
+        <nav class="footer-nav" aria-label="Rechtliche Links">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#impressum" class="footer-nav__link">Impressum</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#datenschutz" class="footer-nav__link"
+                >Datenschutzerklärung</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
