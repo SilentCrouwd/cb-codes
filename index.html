@@ -15,7 +15,13 @@
         <nav class="navbar__navigation">
           <ul class="navbar__menu">
             <li class="navbar__item">
-              <a href="/" class="navbar__link navbar__link--active">Home</a>
+              <a href="/" class="navbar__link">
+                <img
+                  class="navbar__logo"
+                  src="src/assets/img/cb-codes-logo.svg"
+                  alt="FirmenLogo"
+                />
+              </a>
             </li>
             <li class="navbar__item">
               <a href="#service" class="navbar__link">Service</a>
@@ -34,24 +40,26 @@
           <!-- Die schwebende Glasmorphismus-Box -->
           <div class="hero__card">
             <h1 class="hero__title">
-              Kreative Ideen digital
-              <span class="hero__title--gradient">wirksam</span> machen
+              Dein Unternehmen verdient einen
+              <span class="hero__title--gradient">starken digitalen</span>
+              Auftritt.
             </h1>
             <div class="hero__info">
               <p class="hero__text">
-                Wir bauen statische Websites mit maximaler Performance. Modern,
-                barrierefrei und blitzschnell dank Vite. Entdecke, wie wir
-                Design und Code verschmelzen lassen.
+                Schluss mit veralteten Seiten oder Baukästen, die ewig laden.
+                Gemeinsam bringen wir dein Business ins Netz – mit einem
+                modernen, blitzschnellen Design und echtem Handwerk im
+                Hintergrund. Ehrlich, unkompliziert und auf den Punkt.
               </p>
 
               <div class="hero__actions">
                 <!-- Der farbige Button (Primary) -->
-                <a href="/kontakt" class="hero__btn hero__btn--primary"
-                  >Projekt Übersicht</a
+                <a href="#contact" class="hero__btn hero__btn--primary"
+                  >Jetzt anfragen</a
                 >
                 <!-- Der invertierte Button (Secondary) -->
-                <a href="/ueber-mich" class="hero__btn hero__btn--secondary"
-                  >Mehr erfahren</a
+                <a href="#service" class="hero__btn hero__btn--secondary"
+                  >So arbeite ich</a
                 >
               </div>
             </div>
@@ -62,7 +70,7 @@
       <section class="services" id="service">
         <div class="services__container">
           <header class="services__header">
-            <h2 class="services__title">Unsere Services</h2>
+            <h2 class="services__title">Mein Service</h2>
           </header>
 
           <div class="services__grid">
@@ -70,62 +78,169 @@
             <article class="service-card">
               <div class="service-card__image-container">
                 <img
-                  src="src/assets/img/cb-codesLogo4.png"
+                  src="src/assets/img/serviceWebsite.png"
                   alt="Web Design Icon"
                   class="service-card__image"
                 />
               </div>
-              <h3 class="service-card__title">Web Design</h3>
+              <h3 class="service-card__title">Moderne & bezahlbare Websites</h3>
               <p class="service-card__text">
-                Moderne und funktionale Designs, die genau auf deine Zielgruppe
-                zugeschnitten sind.
+                erfekt für kleine Unternehmen: Schlanker Code, der extrem
+                schnell lädt, auf jedem Smartphone gut aussieht und dein Budget
+                schont.
               </p>
-              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
             </article>
             <article class="service-card">
               <div class="service-card__image-container">
                 <img
-                  src="src/assets/img/cb-CodesHeroV4Breit.png"
+                  src="src/assets/img/serviceSEO.png"
                   alt="Web Design Icon"
                   class="service-card__image"
                 />
               </div>
-              <h3 class="service-card__title">Web Design</h3>
+              <h3 class="service-card__title">
+                Gefunden werden bei Google (SEO)
+              </h3>
               <p class="service-card__text">
-                Moderne und funktionale Designs, die genau auf deine Zielgruppe
-                zugeschnitten sind.
+                Die schönste Website nützt nichts, wenn sie keiner findet. Ich
+                optimiere deine Seite von Anfang an so, dass lokale Kunden dich
+                leicht entdecken.
               </p>
-              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
             </article>
             <article class="service-card">
               <div class="service-card__image-container">
                 <img
-                  src="src/assets/img/cb-codesLogo4.png"
+                  src="src/assets/img/ServiceDomain.png"
                   alt="Web Design Icon"
                   class="service-card__image"
                 />
               </div>
-              <h3 class="service-card__title">Web Design</h3>
+              <h3 class="service-card__title">Domain & Gratis-Hosting</h3>
               <p class="service-card__text">
-                Moderne und funktionale Designs, die genau auf deine Zielgruppe
-                zugeschnitten sind.
+                Du musst dich um nichts kümmern. Ich richte deine Wunsch-Domain
+                ein und sorge für ein modernes, sicheres Hosting – ganz ohne
+                teure Monatsgebühren.
               </p>
-              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
             </article>
             <article class="service-card">
               <div class="service-card__image-container">
                 <img
-                  src="src/assets/img/cb-CodesHeroV4Breit.png"
+                  src="src/assets/img/servicePersoenlich.png"
                   alt="Web Design Icon"
                   class="service-card__image"
                 />
               </div>
-              <h3 class="service-card__title">Web Design</h3>
+              <h3 class="service-card__title">Persönlich & auf Augenhöhe</h3>
               <p class="service-card__text">
-                Moderne und funktionale Designs, die genau auf deine Zielgruppe
-                zugeschnitten sind.
+                Keine anonyme Agentur, keine Massenware. Wir entwickeln
+                gemeinsam ein frisches, junges Design, das genau zu deinem
+                Betrieb und deinen Werten passt.
               </p>
-              <a href="#webdesign" class="service-card__link">Mehr erfahren</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="pricing" id="pricing">
+        <div class="pricing__container">
+          <header class="pricing__header">
+            <h2 class="pricing__title">Transparente Preise</h2>
+            <p class="pricing__subtitle">
+              Das passende Paket für dein Vorhaben – ohne versteckte Kosten.
+            </p>
+          </header>
+
+          <div class="pricing__grid">
+            <!-- Eigenständiger Block: price-card (Paket 1) -->
+            <article class="price-card">
+              <div class="price-card__header">
+                <h3 class="price-card__title">Landingpage</h3>
+                <p class="price-card__target">Der Schnelleinstieg</p>
+                <div class="price-card__price">350 € – 490 €</div>
+              </div>
+              <div class="price-card__body">
+                <p class="price-card__description">
+                  Ideal für Unternehmen, die gezielt ein einzelnes Produkt, eine
+                  Aktion oder ein Event bewerben möchten.
+                </p>
+                <ul class="price-card__features">
+                  <li class="price-card__feature">1 Seite (One-Pager)</li>
+                  <li class="price-card__feature">
+                    Klarer Fokus auf Kontaktaufnahme
+                  </li>
+                  <li class="price-card__feature">Pfeilschnelle Ladezeiten</li>
+                  <li class="price-card__feature">Optimiert für Mobilgeräte</li>
+                </ul>
+              </div>
+              <div class="price-card__footer">
+                <a href="#contact" class="price-card__btn">Projekt starten</a>
+              </div>
+            </article>
+
+            <article class="price-card">
+              <div class="price-card__header">
+                <span class="price-card__badge">Bestseller</span>
+                <h3 class="price-card__title">Digitale Visitenkarte</h3>
+                <p class="price-card__target">Der Allrounder</p>
+                <div class="price-card__price">650 € – 850 €</div>
+              </div>
+              <div class="price-card__body">
+                <p class="price-card__description">
+                  Perfekt für lokale Dienstleister wie Friseure, Kosmetikstudios
+                  oder Physiotherapeuten, die sich professionell präsentieren
+                  wollen.
+                </p>
+                <ul class="price-card__features">
+                  <li class="price-card__feature">
+                    Startseite + 3–4 Unterseiten
+                  </li>
+                  <li class="price-card__feature">
+                    Z.B. Über uns, Leistungen, Galerie
+                  </li>
+                  <li class="price-card__feature">
+                    Komplett individuelles BEM-Design
+                  </li>
+                  <li class="price-card__feature">
+                    Einfach erweiterbare Struktur
+                  </li>
+                </ul>
+              </div>
+              <div class="price-card__footer">
+                <a
+                  href="#contact"
+                  class="price-card__btn price-card__btn--primary"
+                  >Meistgewählt</a
+                >
+              </div>
+            </article>
+
+            <!-- Eigenständiger Block: price-card (Paket 3) -->
+            <article class="price-card">
+              <div class="price-card__header">
+                <h3 class="price-card__title">Premium / Gastro</h3>
+                <p class="price-card__target">Der Rundum-Schutz</p>
+                <div class="price-card__price">ab 1.100 €</div>
+              </div>
+              <div class="price-card__body">
+                <p class="price-card__description">
+                  Für Restaurants mit digitaler Speisekarte oder Handwerker mit
+                  großem Projekt-Portfolio.
+                </p>
+                <ul class="price-card__features">
+                  <li class="price-card__feature">Bis zu 8 Unterseiten</li>
+                  <li class="price-card__feature">
+                    DSGVO-konforme Zwei-Klick-Videolösung
+                  </li>
+                  <li class="price-card__feature">
+                    Erweiterte Custom-Features
+                  </li>
+                  <li class="price-card__feature">
+                    Regionale Google-Optimierung (SEO)
+                  </li>
+                </ul>
+              </div>
+              <div class="price-card__footer">
+                <a href="#contact" class="price-card__btn">Premium anfragen</a>
+              </div>
             </article>
           </div>
         </div>
@@ -141,11 +256,12 @@
             <!-- Linker Bereich: Kontaktdaten und Social Media -->
             <div class="contact__content">
               <p class="contact__text">
-                Schreib mir gerne eine Nachricht oder vernetze dich mit mir auf
-                meinen Kanälen!
+                Egal ob komplett neue Website oder ein frischer Look für deine
+                alte Seite: Schreib mir eine Nachricht und ich melde mich
+                innerhalb von 24 Stunden bei dir.
               </p>
               <img
-                src="src/assets/img/cb-codesHerov3.png"
+                src="src/assets/img/unnamed.png"
                 alt="Dein Name - Profilbild"
                 class="contact__image"
               />
@@ -264,7 +380,7 @@
         <!-- Linker Bereich: Copyright oder Brand-Name -->
         <div class="footer__copyright">
           <p class="footer__text">
-            &copy; 2026 Dein Name. Alle Rechte vorbehalten.
+            &copy; 2026 Christian Buchholz. Alle Rechte vorbehalten.
           </p>
         </div>
 

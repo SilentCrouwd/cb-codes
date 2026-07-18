@@ -1,0 +1,41 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="55%" stop-color="#6d5bc9"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="grayFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Code brackets, maximal ausgefüllt -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- linke Klammer < -->
+    <path d="M 230 160 L 60 400 L 230 640"
+          stroke="url(#brandGradient)" stroke-width="46"/>
+    <!-- rechte Klammer > -->
+    <path d="M 570 160 L 740 400 L 570 640"
+          stroke="url(#brandGradient)" stroke-width="46"/>
+  </g>
+
+  <!-- CB Initialen, groß und zentriert innerhalb der Klammern -->
+  <text x="400" y="420"
+        font-family="'Courier New', monospace"
+        font-weight="700"
+        font-size="170"
+        text-anchor="middle"
+        fill="url(#brandGradient)"
+        letter-spacing="-4">cb</text>
+
+  <!-- "codes" Schriftzug darunter -->
+  <text x="400" y="525"
+        font-family="'Courier New', monospace"
+        font-weight="700"
+        font-size="78"
+        text-anchor="middle"
+        fill="url(#grayFade)"
+        letter-spacing="6">codes</text>
+</svg>
