@@ -17,8 +17,8 @@
   );
   /* Basis-Grautöne für die Boxen */
   --color-gray-box-light: #ffffff; /* Softes, klares Hellgrau */
-  --color-gray-box-dark: #1e293b; /* Modernes, dunkles Schiefergrau */
-
+  --color-gray-box-dark: rgba(30, 41, 59, 0.7);
+  /* Modernes, dunkles Schiefergrau */
   /* ==========================================
      2. DYNAMISCHES THEME (Standard: Hellmodus)
      ========================================== */
