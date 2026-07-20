@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 .navbar {
   position: sticky;
@@ -53,44 +53,40 @@ section {
 
 .hero {
   .hero__container {
-    position: relative;
     width: 100%;
-    height: 90vh;
-
-    background-image: url("./assets/img/cb.CodesHerov4Hoch.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     .hero__card {
       height: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .hero__title {
-        width: fit-content;
-        text-align: center;
-        padding: 0.5rem;
-        margin: 0 auto;
-        font-size: 1.8rem;
-        color: var(--color-text);
-        backdrop-filter: blur(8px);
-        background-color: var(--color-glass-bg);
-        border: 1px solid var(--color-glass-border);
 
+      flex-direction: column;
+      .hero__header {
+        display: flex;
+        flex-direction: column;
+
+        .hero__header-img {
+          padding: 1rem 0;
+          width: 30%;
+        }
         .hero__title--gradient {
+          width: 50%;
+          width: fit-content;
+          padding: 0.5rem 0;
+          margin: 0 auto;
+          font-size: 1.8rem;
           background: var(--bg-gradient);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
       }
+
       .hero__info {
         display: flex;
         flex-direction: column;
-        padding: 0.3rem;
-        background-color: var(--color-glass-bg);
-        border: 1px solid var(--color-glass-border);
-        backdrop-filter: blur(8px);
+        padding: 0.3rem 0;
         color: var(--color-text);
       }
       .hero__actions {
@@ -98,7 +94,7 @@ section {
         justify-content: space-evenly;
       }
       .hero__text {
-        padding: 0.3rem 0.5rem;
+        padding: 0.8rem 0;
         font-size: 1.2rem;
         margin-bottom: 1rem;
       }
@@ -110,7 +106,7 @@ section {
     border-radius: 15px;
     padding: 1.5rem;
     transition: all 0.4s ease;
-    background: var(--bg-gradient);
+    background: var(--color-primary);
     color: black;
     &:active {
       scale: 0.9;
@@ -130,11 +126,15 @@ section {
       border: 1px solid var(--color-border);
       backdrop-filter: blur(8px);
       &:hover {
-        background: var(--bg-gradient);
+        background: var(--color-primary);
         border-color: transparent;
         color: black;
       }
     }
+  }
+  .hero__footer-img {
+    width: 100%;
+    padding: 1rem 0;
   }
 }
 .services {
@@ -142,6 +142,9 @@ section {
     color: var(--color-text);
     font-size: 1.5rem;
     margin-bottom: 1rem;
+
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
   }
 
   .services__grid {
@@ -161,7 +164,9 @@ section {
       .service-card__title {
         padding-top: 2rem;
         font-size: 1.2rem;
-        color: var(--color-text);
+        background: var(--bg-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       .service-card__text {
         font-size: 1rem;
@@ -176,6 +181,8 @@ section {
     color: var(--color-text);
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
   }
 
   .pricing__subtitle {
@@ -197,7 +204,7 @@ section {
   padding: 0.5rem;
 
   .price-card__title {
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
     background: var(--bg-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -239,6 +246,9 @@ section {
     color: var(--color-text);
     font-size: 1.5rem;
     margin-bottom: 1rem;
+
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
   }
   .contact__grid {
     display: flex;
@@ -258,9 +268,15 @@ section {
   .contact__text {
     color: var(--color-text-muted);
     font-size: 1.1rem;
-
-    padding: 0.5rem;
+    padding: 0.5rem 0.1rem;
     width: 50%;
+
+    .contact__text--gradient {
+      font-weight: bold;
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   .contact__image {
@@ -275,12 +291,12 @@ section {
     justify-items: center;
 
     .social-links__icon {
-      color: var(--color-secondary);
+      color: var(--color-primary);
       width: 5rem;
       margin-bottom: 2rem;
 
       &:hover {
-        color: var(--color-primary);
+        color: var(--color-secondary);
       }
     }
   }

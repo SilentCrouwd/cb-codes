@@ -9,7 +9,12 @@
   --shadow-glow: 0px 0px 5px 0px var(--color-secondary);
   --color-primary: #14b8a6; /* Frisches Türkis */
   --color-secondary: #8b5cf6; /* Leuchtendes Violett */
-  --bg-gradient: linear-gradient(to right, #14b8a6, #8b5cf6);
+  --bg-gradient: linear-gradient(
+    to right,
+    #14b8a6 5%,
+    #8b5cf6,
+    rgb(237, 192, 255)
+  );
   /* Basis-Grautöne für die Boxen */
   --color-gray-box-light: #ffffff; /* Softes, klares Hellgrau */
   --color-gray-box-dark: #1e293b; /* Modernes, dunkles Schiefergrau */
