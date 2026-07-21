@@ -1,127 +1,168 @@
 <!doctype html>
-<html lang="en">
+<html lang="de" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet_variables" href="src/variables.css" />
     <link rel="stylesheet" href="src/style.css" />
     <title>cb-codes</title>
   </head>
-  <body>
-   
-    <main>
-      <section class="hero hero--fullscreen">
-        <!-- Der zentrierte Inhalts-Container -->
-        <div class="hero__container">
-          <!-- Die schwebende Glasmorphismus-Box -->
-          <div class="hero__card">
-            <div class="hero__header">
+  <body
+    class="min-h-screen bg-brand-gradient xl:flex xl:flex-col xl:items-center"
+  >
+    <main class="w-full">
+      <!-- HERO SECTION -->
+      <section
+        class="p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto xl:h-screen"
+      >
+        <div class="w-full flex flex-col gap-8 md:items-center xl:flex-row">
+          <!-- Glassmorphism Card -->
+          <div class="h-full flex flex-col xl:w-1/2">
+            <div class="flex flex-col items-center xl:self-start">
               <img
-                class="hero__header-img"
+                class="w-[30%] self-start mt-10"
                 src="src/assets/img/cb-codes-logo.svg"
                 alt="Logo von cb-Codes"
               />
-
-              <h1 class="hero__title--gradient">
+              <h1
+                class="w-fit mt-5 mx-auto text-[1.8rem] md:text-[2rem] xl:text-[2.2rem] bg-text-gradient bg-clip-text text-transparent font-bold"
+              >
                 Für deinen starken Digitalen Auftritt
               </h1>
             </div>
-            <div class="hero__info">
-              <p class="hero__text">
+
+            <div class="flex flex-col py-1 text-main">
+              <p class="mb-10 text-[1.2rem] xl:text-[1.4rem]">
                 Schluss mit veralteten Seiten oder Baukästen, die ewig laden.
                 Gemeinsam bringen wir dein Business ins Netz – mit einem
                 modernen, blitzschnellen Design und echtem Handwerk im
                 Hintergrund. Ehrlich, unkompliziert und auf den Punkt.
               </p>
 
-              <div class="hero__actions">
-                <!-- Der farbige Button (Primary) -->
-                <a href="#contact" class="hero__btn hero__btn--primary"
-                  >Jetzt anfragen</a
+              <div class="flex justify-evenly gap-4">
+                <a
+                  href="#contact"
+                  class="no-underline border border-transparent rounded-[15px] p-6 transition-all duration-400 ease-in-out bg-primary text-white md:text-[1.3rem] xl:text-[1.5rem] active:scale-90 hover:bg-inherit hover:border-brand-border hover:backdrop-blur-md hover:text-main hover:shadow-[1px_1px_30px_1px_var(--color-primary),1px_1px_15px_1px_var(--color-secondary)]"
                 >
-                <!-- Der invertierte Button (Secondary) -->
-                <a href="#pricing" class="hero__btn hero__btn--secondary"
-                  >Packete ansehen</a
+                  Jetzt anfragen
+                </a>
+                <a
+                  href="#pricing"
+                  class="no-underline rounded-[15px] p-6 transition-all duration-400 ease-in-out text-main bg-transparent border border-brand-border backdrop-blur-md md:text-[1.3rem] xl:text-[1.5rem] active:scale-90 hover:bg-primary hover:border-transparent hover:text-black hover:shadow-[1px_1px_30px_1px_var(--color-primary),1px_1px_15px_1px_var(--color-secondary)] hover:text-white"
                 >
+                  Pakete ansehen
+                </a>
               </div>
             </div>
           </div>
-          <div class="hero__footer">
+
+          <div class="flex justify-center md:w-4/5 xl:w-1/2">
             <img
-              class="hero__footer-img"
-              src="src/assets/img/cbcodesHeroFooter.png"
+              class="w-full py-4 md:w-[700px] xl:mt-[13rem] xl:w-full"
+              src="src/assets/img/cb-codesFooterIMg.png"
               alt=""
             />
           </div>
         </div>
       </section>
-      <!-- Block: services -->
-      <section class="services" id="service">
-        <div class="services__container">
-          <header class="services__header">
-            <h2 class="services__title">Mein Service</h2>
+
+      <!-- SERVICES SECTION -->
+      <section
+        class="services p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto"
+        id="service"
+      >
+        <div>
+          <header class="mb-4">
+            <h2
+              class="text-main text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] underline decoration-primary font-bold"
+            >
+              Mein Service
+            </h2>
           </header>
 
-          <div class="services__grid">
-            <!-- Eigenständiger Block: service-card (Karte 1) -->
-            <article class="service-card">
-              <div class="service-card__image-container">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <article class="shadow-glow bg-box p-[0.5rem]">
+              <div>
                 <img
                   src="src/assets/img/serviceWebsite.png"
                   alt="Web Design Icon"
-                  class="service-card__image"
+                  class="w-full brightness-80"
                 />
               </div>
-              <h3 class="service-card__title">Moderne & bezahlbare Websites</h3>
-              <p class="service-card__text">
-                erfekt für kleine Unternehmen: Schlanker Code, der extrem
+              <h3
+                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+              >
+                Moderne & bezahlbare Websites
+              </h3>
+              <p
+                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+              >
+                Perfekt für kleine Unternehmen: Schlanker Code, der extrem
                 schnell lädt, auf jedem Smartphone gut aussieht und dein Budget
                 schont.
               </p>
             </article>
-            <article class="service-card">
-              <div class="service-card__image-container">
+
+            <article class="shadow-glow bg-box p-[0.5rem]">
+              <div>
                 <img
                   src="src/assets/img/serviceSEO.png"
-                  alt="Web Design Icon"
-                  class="service-card__image"
+                  alt="SEO Icon"
+                  class="w-full brightness-80"
                 />
               </div>
-              <h3 class="service-card__title">
+              <h3
+                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+              >
                 Gefunden werden bei Google (SEO)
               </h3>
-              <p class="service-card__text">
+              <p
+                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+              >
                 Die schönste Website nützt nichts, wenn sie keiner findet. Ich
                 optimiere deine Seite von Anfang an so, dass lokale Kunden dich
                 leicht entdecken.
               </p>
             </article>
-            <article class="service-card">
-              <div class="service-card__image-container">
+
+            <article class="shadow-glow bg-box p-[0.5rem]">
+              <div>
                 <img
                   src="src/assets/img/ServiceDomain.png"
-                  alt="Web Design Icon"
-                  class="service-card__image"
+                  alt="Domain Icon"
+                  class="w-full brightness-80"
                 />
               </div>
-              <h3 class="service-card__title">Domain & Gratis-Hosting</h3>
-              <p class="service-card__text">
+              <h3
+                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+              >
+                Domain & Gratis-Hosting
+              </h3>
+              <p
+                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+              >
                 Du musst dich um nichts kümmern. Ich richte deine Wunsch-Domain
                 ein und sorge für ein modernes, sicheres Hosting – ganz ohne
                 teure Monatsgebühren.
               </p>
             </article>
-            <article class="service-card">
-              <div class="service-card__image-container">
+
+            <article class="shadow-glow bg-box p-[0.5rem]">
+              <div>
                 <img
                   src="src/assets/img/servicePersoenlich.png"
-                  alt="Web Design Icon"
-                  class="service-card__image"
+                  alt="Persönlich Icon"
+                  class="w-full brightness-80"
                 />
               </div>
-              <h3 class="service-card__title">Persönlich & auf Augenhöhe</h3>
-              <p class="service-card__text">
+              <h3
+                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+              >
+                Persönlich & auf Augenhöhe
+              </h3>
+              <p
+                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+              >
                 Keine anonyme Agentur, keine Massenware. Wir entwickeln
                 gemeinsam ein frisches, junges Design, das genau zu deinem
                 Betrieb und deinen Werten passt.
@@ -130,138 +171,221 @@
           </div>
         </div>
       </section>
-      <section class="pricing" id="pricing">
-        <div class="pricing__container">
-          <header class="pricing__header">
-            <h2 class="pricing__title">Transparente Preise</h2>
-            <p class="pricing__subtitle">
+
+      <!-- PRICING SECTION -->
+      <section
+        class="p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto"
+        id="pricing"
+      >
+        <div>
+          <header class="mb-4">
+            <h2
+              class="text-main text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] underline decoration-primary font-bold mb-2"
+            >
+              Transparente Preise
+            </h2>
+            <p class="text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] text-muted">
               Das passende Paket für dein Vorhaben – ohne versteckte Kosten.
             </p>
           </header>
 
-          <div class="pricing__grid">
-            <!-- Eigenständiger Block: price-card (Paket 1) -->
-            <article class="price-card">
-              <div class="price-card__header">
-                <h3 class="price-card__title">Landingpage</h3>
-                <p class="price-card__target">Der Schnelleinstieg</p>
-                <div class="price-card__price">350 € – 490 €</div>
+          <div
+            class="mt-8 flex flex-col gap-8 md:flex-row md:flex-wrap md:justify-center xl:flex-nowrap"
+          >
+            <!-- Paket 1 -->
+            <article
+              class="flex flex-col justify-center md:grid md:grid-cols-1 md:grid-rows-[3] shadow-glow bg-box p-[0.5rem] md:w-[30rem] md:h-150 xl:h-220"
+            >
+              <div
+                class="md:pt-9 md:flex md:flex-col md:justify-center xl:pt-23"
+              >
+                <h3
+                  class="py-2 bg-text-gradient bg-clip-text text-transparent text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] font-bold"
+                >
+                  Landingpage
+                </h3>
+                <p
+                  class="text-muted font-bold italic underline py-[0.2rem] md:text-[1.3rem] xl:text-[1.5rem]"
+                >
+                  Der Schnelleinstieg
+                </p>
+                <div
+                  class="text-muted font-bold italic mb-2 md:text-[1.3rem] xl:text-[1.5rem]"
+                >
+                  350 € – 490 €
+                </div>
               </div>
-              <div class="price-card__body">
-                <p class="price-card__description">
+              <div>
+                <p
+                  class="text-[1rem] md:text-[1.4rem] xl:text-[1.6rem] text-muted mb-4"
+                >
                   Ideal für Unternehmen, die gezielt ein einzelnes Produkt, eine
                   Aktion oder ein Event bewerben möchten.
                 </p>
-                <ul class="price-card__features">
-                  <li class="price-card__feature">1 Seite (One-Pager)</li>
-                  <li class="price-card__feature">
-                    Klarer Fokus auf Kontaktaufnahme
-                  </li>
-                  <li class="price-card__feature">Pfeilschnelle Ladezeiten</li>
-                  <li class="price-card__feature">Optimiert für Mobilgeräte</li>
+                <ul
+                  class="text-[1rem] md:text-[1.4rem] xl:text-[1.6rem] text-muted space-y-1"
+                >
+                  <li>• 1 Seite (One-Pager)</li>
+                  <li>• Klarer Fokus auf Kontaktaufnahme</li>
+                  <li>• Pfeilschnelle Ladezeiten</li>
+                  <li>• Optimiert für Mobilgeräte</li>
                 </ul>
               </div>
-              <div class="price-card__footer">
-                <a href="#contact" class="price-card__btn">Projekt starten</a>
+              <div class="mt-4">
+                <a
+                  href="#contact"
+                  class="text-secondary font-medium hover:underline"
+                >
+                  Projekt starten
+                </a>
               </div>
             </article>
 
-            <article class="price-card">
-              <div class="price-card__header">
-                <span class="price-card__badge">Bestseller</span>
-                <h3 class="price-card__title">Digitale Visitenkarte</h3>
-                <p class="price-card__target">Der Allrounder</p>
-                <div class="price-card__price">650 € – 850 €</div>
+            <!-- Paket 2 -->
+            <article
+              class="flex flex-col justify-center md:grid md:grid-cols-1 md:grid-rows-[3] shadow-glow bg-box p-[0.5rem] md:w-[30rem] md:h-150 xl:h-220"
+            >
+              <div class="xl:h-70 md:flex md:flex-col md:justify-center">
+                <span
+                  class="self-start bg-text-gradient p-[0.2rem] text-xs font-bold uppercase rounded text-white inline-block mb-1"
+                >
+                  Bestseller
+                </span>
+                <h3
+                  class="py-2 bg-text-gradient bg-clip-text text-transparent text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] font-bold"
+                >
+                  Digitale Visitenkarte
+                </h3>
+                <p
+                  class="text-muted font-bold italic underline py-[0.2rem] md:text-[1.3rem] xl:text-[1.5rem]"
+                >
+                  Der Allrounder
+                </p>
+                <div
+                  class="text-muted font-bold italic mb-2 md:text-[1.3rem] xl:text-[1.5rem]"
+                >
+                  650 € – 850 €
+                </div>
               </div>
-              <div class="price-card__body">
-                <p class="price-card__description">
+              <div>
+                <p
+                  class="text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] text-muted mb-4"
+                >
                   Perfekt für lokale Dienstleister wie Friseure, Kosmetikstudios
                   oder Physiotherapeuten, die sich professionell präsentieren
                   wollen.
                 </p>
-                <ul class="price-card__features">
-                  <li class="price-card__feature">
-                    Startseite + 3–4 Unterseiten
-                  </li>
-                  <li class="price-card__feature">
-                    Z.B. Über uns, Leistungen, Galerie
-                  </li>
-                  <li class="price-card__feature">
-                    Komplett individuelles BEM-Design
-                  </li>
-                  <li class="price-card__feature">
-                    Einfach erweiterbare Struktur
-                  </li>
+                <ul
+                  class="text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] text-muted space-y-1"
+                >
+                  <li>• Startseite + 3–4 Unterseiten</li>
+                  <li>• Z.B. Über uns, Leistungen, Galerie</li>
+                  <li>• Komplett individuelles Design</li>
+                  <li>• Einfach erweiterbare Struktur</li>
                 </ul>
               </div>
-              <div class="price-card__footer">
+              <div class="mt-4">
                 <a
                   href="#contact"
-                  class="price-card__btn price-card__btn--primary"
-                  >Meistgewählt</a
+                  class="text-secondary font-medium hover:underline"
                 >
+                  Meistgewählt
+                </a>
               </div>
             </article>
 
-            <!-- Eigenständiger Block: price-card (Paket 3) -->
-            <article class="price-card">
-              <div class="price-card__header">
-                <h3 class="price-card__title">Premium / Gastro</h3>
-                <p class="price-card__target">Der Rundum-Schutz</p>
-                <div class="price-card__price">ab 1.100 €</div>
+            <!-- Paket 3 -->
+            <article
+              class="flex flex-col justify-center md:grid md:grid-cols-1 md:grid-rows-[3] shadow-glow bg-box p-[0.5rem] md:w-[30rem] md:h-150 xl:h-220"
+            >
+              <div class="xl:pt-11 md:flex md:flex-col md:justify-center">
+                <h3
+                  class="py-2 bg-text-gradient bg-clip-text text-transparent text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] font-bold"
+                >
+                  Premium / Gastro
+                </h3>
+                <p
+                  class="text-muted font-bold italic underline py-[0.2rem] md:text-[1.3rem] xl:text-[1.5rem]"
+                >
+                  Der Rundum-Schutz
+                </p>
+                <div
+                  class="text-muted font-bold italic mb-2 md:text-[1.3rem] xl:text-[1.5rem]"
+                >
+                  ab 1.100 €
+                </div>
               </div>
-              <div class="price-card__body">
-                <p class="price-card__description">
+              <div>
+                <p
+                  class="text-[1rem] md:text-[1.4rem] xl:text-[1.6rem] text-muted mb-4"
+                >
                   Für Restaurants mit digitaler Speisekarte oder Handwerker mit
                   großem Projekt-Portfolio.
                 </p>
-                <ul class="price-card__features">
-                  <li class="price-card__feature">Bis zu 8 Unterseiten</li>
-                  <li class="price-card__feature">
-                    DSGVO-konforme Zwei-Klick-Videolösung
-                  </li>
-                  <li class="price-card__feature">
-                    Erweiterte Custom-Features
-                  </li>
-                  <li class="price-card__feature">
-                    Regionale Google-Optimierung (SEO)
-                  </li>
+                <ul
+                  class="text-[1rem] md:text-[1.4rem] xl:text-[1.6rem] text-muted space-y-1"
+                >
+                  <li>• Bis zu 8 Unterseiten</li>
+                  <li>• DSGVO-konforme Zwei-Klick-Videolösung</li>
+                  <li>• Erweiterte Custom-Features</li>
+                  <li>• Regionale Google-Optimierung (SEO)</li>
                 </ul>
               </div>
-              <div class="price-card__footer">
-                <a href="#contact" class="price-card__btn">Premium anfragen</a>
+              <div class="mt-4">
+                <a
+                  href="#contact"
+                  class="text-secondary font-medium hover:underline"
+                >
+                  Premium anfragen
+                </a>
               </div>
             </article>
           </div>
         </div>
       </section>
-      <!-- Block: contact -->
-      <section class="contact" id="contact">
-        <div class="contact__container">
-          <header class="contact__header">
-            <h2 class="contact__title">Kontakt</h2>
+
+      <!-- CONTACT SECTION -->
+      <section
+        class="p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto"
+        id="contact"
+      >
+        <div>
+          <header class="mb-4">
+            <h2
+              class="text-main text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] underline decoration-primary font-bold"
+            >
+              Kontakt
+            </h2>
           </header>
 
-          <div class="contact__grid">
-            <!-- Linker Bereich: Kontaktdaten und Social Media -->
-            <div class="contact__content">
-              <p class="contact__text">
-                <span class="contact__text contact__text--gradient">
-                  Neue Website oder Re-Design?</span
+          <div class="flex flex-col shadow-glow bg-box">
+            <div
+              class="p-[0.5rem] relative flex flex-row items-center justify-center border-b border-brand-border"
+            >
+              <p
+                class="text-muted text-[1.1rem] md:text-[1.2rem] xl:text-[1.4rem] py-2 px-[0.1rem] w-1/2"
+              >
+                <span
+                  class="font-bold bg-text-gradient bg-clip-text text-transparent"
+                >
+                  Neue Website oder Re-Design? </span
                 ><br />
                 Schreib mir – Antwort garantiert in 24 Stunden.
               </p>
               <img
                 src="src/assets/img/unnamed.png"
                 alt="Dein Name - Profilbild"
-                class="contact__image"
+                class="shadow-glow w-1/2 md:max-w-[15rem]"
               />
-              <!-- Eigenständiger Block: social-links -->
             </div>
-            <div class="social-links">
-              <a href="#" class="social-links__link" aria-label="E-Mail">
+
+            <!-- Social Links -->
+            <div
+              class="py-8 bg-box grid grid-cols-2 justify-items-center md:grid-cols-3 xl:grid-cols-2 gap-y-4"
+            >
+              <a href="#" aria-label="E-Mail" class="inline-block">
                 <svg
-                  class="social-links__icon"
+                  class="text-primary w-20 mb-8 hover:text-secondary transition-colors"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -276,9 +400,9 @@
                 </svg>
               </a>
 
-              <a href="#" class="social-links__link" aria-label="Telefon">
+              <a href="#" aria-label="Telefon" class="inline-block">
                 <svg
-                  class="social-links__icon"
+                  class="text-primary w-20 mb-8 hover:text-secondary transition-colors"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -292,9 +416,9 @@
                 </svg>
               </a>
 
-              <a href="#" class="social-links__link" aria-label="Instagram">
+              <a href="#" aria-label="Instagram" class="inline-block">
                 <svg
-                  class="social-links__icon"
+                  class="text-primary w-20 mb-8 hover:text-secondary transition-colors"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -310,9 +434,9 @@
                 </svg>
               </a>
 
-              <a href="#" class="social-links__link" aria-label="LinkedIn">
+              <a href="#" aria-label="LinkedIn" class="inline-block">
                 <svg
-                  class="social-links__icon"
+                  class="text-primary w-20 mb-8 hover:text-secondary transition-colors"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -328,9 +452,9 @@
                 </svg>
               </a>
 
-              <a href="#" class="social-links__link" aria-label="GitHub">
+              <a href="#" aria-label="GitHub" class="inline-block">
                 <svg
-                  class="social-links__icon"
+                  class="text-primary w-20 mb-8 hover:text-secondary transition-colors"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -344,10 +468,9 @@
                 </svg>
               </a>
 
-              <a href="#" class="social-links__link" aria-label="Netlify">
-                <!-- Netlify SVG (Standard-Geometrie) -->
+              <a href="#" aria-label="Netlify" class="inline-block">
                 <svg
-                  class="social-links__icon"
+                  class="text-primary w-20 mb-8 hover:text-secondary transition-colors"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -360,31 +483,39 @@
                 </svg>
               </a>
             </div>
-            <!-- Rechter Bereich: Dein Profilbild -->
           </div>
         </div>
       </section>
     </main>
-    <!-- Block: footer -->
-    <footer class="footer">
-      <div class="footer__container">
-        <!-- Linker Bereich: Copyright oder Brand-Name -->
-        <div class="footer__copyright">
-          <p class="footer__text">
+
+    <!-- FOOTER SECTION -->
+    <footer class="w-full">
+      <div
+        class="gap-8 flex flex-col items-center justify-center text-center min-h-[15rem]"
+      >
+        <div>
+          <p class="text-main text-[1.3rem]">
             &copy; 2026 Christian Buchholz. Alle Rechte vorbehalten.
           </p>
         </div>
 
-        <!-- Rechter Bereich / Eigenständiger Block: footer-nav -->
-        <nav class="footer-nav" aria-label="Rechtliche Links">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-              <a href="#impressum" class="footer-nav__link">Impressum</a>
-            </li>
-            <li class="footer-nav__item">
-              <a href="#datenschutz" class="footer-nav__link"
-                >Datenschutzerklärung</a
+        <nav aria-label="Rechtliche Links">
+          <ul class="list-none flex gap-8 justify-evenly">
+            <li>
+              <a
+                href="#impressum"
+                class="no-underline text-[1rem] text-muted hover:text-primary transition-colors"
               >
+                Impressum
+              </a>
+            </li>
+            <li>
+              <a
+                href="#datenschutz"
+                class="no-underline text-[1rem] text-muted hover:text-primary transition-colors"
+              >
+                Datenschutzerklärung
+              </a>
             </li>
           </ul>
         </nav>
