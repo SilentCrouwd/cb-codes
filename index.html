@@ -13,10 +13,11 @@
     <main class="w-full">
       <!-- HERO SECTION -->
       <section
-        class="p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto xl:h-screen"
+        class="p-[0.8rem] md:p-[1.5rem] lg:max-w-[1000px] xl:w-full mx-auto lg:min-h-screen flex items-center"
       >
-        <div class="w-full flex flex-col gap-8 md:items-center xl:flex-row">
-          <!-- Glassmorphism Card -->
+        <div
+          class="w-full flex flex-col gap-8 md:items-center xl:flex-row bg-box p-5"
+        >
           <div class="h-full flex flex-col xl:w-1/2">
             <div class="flex flex-col items-center xl:self-start">
               <img
@@ -31,7 +32,7 @@
               </h1>
             </div>
 
-            <div class="flex flex-col py-1 text-main">
+            <div class="flex flex-col py-1 text-muted">
               <p class="mb-10 text-[1.2rem] xl:text-[1.4rem]">
                 Schluss mit veralteten Seiten oder Baukästen, die ewig laden.
                 Gemeinsam bringen wir dein Business ins Netz – mit einem
@@ -39,16 +40,16 @@
                 Hintergrund. Ehrlich, unkompliziert und auf den Punkt.
               </p>
 
-              <div class="flex justify-evenly gap-4">
+              <div class="flex justify-center gap-4">
                 <a
                   href="#contact"
-                  class="no-underline border border-transparent rounded-[15px] p-6 transition-all duration-400 ease-in-out bg-primary text-white md:text-[1.3rem] xl:text-[1.5rem] active:scale-90 hover:bg-inherit hover:border-brand-border hover:backdrop-blur-md hover:text-main hover:shadow-[1px_1px_30px_1px_var(--color-primary),1px_1px_15px_1px_var(--color-secondary)]"
+                  class="no-underline border border-transparent rounded-[15px] p-6 transition-all duration-400 ease-in-out bg-primary text-white md:text-[1.1rem] xl:text-[1.2rem] active:scale-90 hover:bg-inherit hover:border-brand-border hover:backdrop-blur-md hover:text-black hover:shadow-[1px_1px_30px_1px_var(--color-primary),1px_1px_15px_1px_var(--color-secondary)]"
                 >
                   Jetzt anfragen
                 </a>
                 <a
                   href="#pricing"
-                  class="no-underline rounded-[15px] p-6 transition-all duration-400 ease-in-out text-main bg-transparent border border-brand-border backdrop-blur-md md:text-[1.3rem] xl:text-[1.5rem] active:scale-90 hover:bg-primary hover:border-transparent hover:text-black hover:shadow-[1px_1px_30px_1px_var(--color-primary),1px_1px_15px_1px_var(--color-secondary)] hover:text-white"
+                  class="no-underline rounded-[15px] p-6 transition-all duration-400 ease-in-out text-black bg-transparent border border-brand-border backdrop-blur-md md:text-[1.3rem] xl:text-[1.5rem] active:scale-90 hover:bg-primary hover:border-transparent hover:shadow-[1px_1px_30px_1px_var(--color-primary),1px_1px_15px_1px_var(--color-secondary)] hover:text-white"
                 >
                   Pakete ansehen
                 </a>
@@ -56,9 +57,9 @@
             </div>
           </div>
 
-          <div class="flex justify-center md:w-4/5 xl:w-1/2">
+          <div class="flex justify-center w-full lg:w-1/2">
             <img
-              class="w-full py-4 md:w-[700px] xl:mt-[13rem] xl:w-full"
+              class="w-full py-4 lg:max-w-none"
               src="src/assets/img/cb-codesFooterIMg.webp"
               alt=""
             />
@@ -68,7 +69,7 @@
 
       <!-- SERVICES SECTION -->
       <section
-        class="services p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto"
+        class="services p-[0.8rem] md:p-[1.5rem] lg:max-w-[1000px] xl:w-full mx-auto"
         id="service"
       >
         <div>
@@ -80,93 +81,105 @@
             </h2>
           </header>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <article class="shadow-glow bg-box p-[0.5rem]">
-              <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
+            <article
+              class="shadow-glow bg-box p-[0.5rem] w-full h-full lg:flex lg:flex-row"
+            >
+              <div class="lg:w-1/2">
                 <img
                   src="src/assets/img/serviceWebsite.webp"
                   alt="Web Design Icon"
                   class="w-full"
                 />
               </div>
-              <h3
-                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
-              >
-                Moderne & bezahlbare Websites
-              </h3>
-              <p
-                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
-              >
-                Perfekt für kleine Unternehmen: Schlanker Code, der extrem
-                schnell lädt, auf jedem Smartphone gut aussieht und dein Budget
-                schont.
-              </p>
+              <div class="p-5 lg:w-1/2">
+                <h3
+                  class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+                >
+                  Moderne & bezahlbare Websites
+                </h3>
+                <p
+                  class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+                >
+                  Perfekt für kleine Unternehmen: Schlanker Code, der extrem
+                  schnell lädt, auf jedem Smartphone gut aussieht und dein
+                  Budget schont.
+                </p>
+              </div>
             </article>
 
-            <article class="shadow-glow bg-box p-[0.5rem]">
-              <div>
+            <article
+              class="shadow-glow bg-box p-[0.5rem] w-full h-full lg:flex lg:flex-row"
+            >
+              <div class="lg:w-1/2">
                 <img
                   src="src/assets/img/serviceSEO.webp"
                   alt="SEO Icon"
                   class="w-full"
                 />
               </div>
-              <h3
-                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
-              >
-                Gefunden werden bei Google (SEO)
-              </h3>
-              <p
-                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
-              >
-                Die schönste Website nützt nichts, wenn sie keiner findet. Ich
-                optimiere deine Seite von Anfang an so, dass lokale Kunden dich
-                leicht entdecken.
-              </p>
+              <div class="p-5 lg:w-1/2">
+                <h3
+                  class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+                >
+                  Gefunden werden bei Google (SEO)
+                </h3>
+                <p
+                  class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+                >
+                  Die schönste Website nützt nichts, wenn sie keiner findet. Ich
+                  optimiere deine Seite von Anfang an so, dass lokale Kunden
+                  dich leicht entdecken.
+                </p>
+              </div>
             </article>
 
-            <article class="shadow-glow bg-box p-[0.5rem]">
-              <div>
+            <article class="shadow-glow bg-box p-[0.5rem] lg:flex lg:flex-row">
+              <div class="lg:w-1/2">
                 <img
                   src="src/assets/img/ServiceDomain.webp"
                   alt="Domain Icon"
                   class="w-full"
                 />
               </div>
-              <h3
-                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
-              >
-                Domain & Gratis-Hosting
-              </h3>
-              <p
-                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
-              >
-                Du musst dich um nichts kümmern. Ich richte deine Wunsch-Domain
-                ein und sorge für ein modernes, sicheres Hosting – ganz ohne
-                teure Monatsgebühren.
-              </p>
+              <div class="p-5 lg:w-1/2">
+                <h3
+                  class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+                >
+                  Domain & Gratis-Hosting
+                </h3>
+                <p
+                  class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+                >
+                  Du musst dich um nichts kümmern. Ich richte deine
+                  Wunsch-Domain ein und sorge für ein modernes, sicheres Hosting
+                  – ganz ohne teure Monatsgebühren.
+                </p>
+              </div>
             </article>
 
-            <article class="shadow-glow bg-box p-[0.5rem]">
-              <div>
+            <article class="shadow-glow bg-box p-[0.5rem] lg:flex lg:flex-row">
+              <div class="lg:w-1/2">
                 <img
                   src="src/assets/img/servicePersoenlich.webp"
                   alt="Persönlich Icon"
                   class="w-full"
                 />
               </div>
-              <h3
-                class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
-              >
-                Persönlich & auf Augenhöhe
-              </h3>
-              <p
-                class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
-              >
-                Keine anonyme Agentur, keine Massenware. Wir entwickeln
-                gemeinsam ein frisches, junges Design, das genau zu deinem
-                Betrieb und deinen Werten passt.
-              </p>
+              <div class="p-5 lg:w-1/2">
+                <h3
+                  class="pt-8 text-[1.2rem] md:text-[1.5rem] xl:text-[1.7rem] bg-text-gradient bg-clip-text text-transparent font-semibold"
+                >
+                  Persönlich & auf Augenhöhe
+                </h3>
+                <p
+                  class="text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] text-muted mt-2"
+                >
+                  Keine anonyme Agentur, keine Massenware. Wir entwickeln
+                  gemeinsam ein frisches, junges Design, das genau zu deinem
+                  Betrieb und deinen Werten passt.
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -174,7 +187,7 @@
 
       <!-- PRICING SECTION -->
       <section
-        class="p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto"
+        class="p-[0.8rem] md:p-[1.5rem] lg:max-w-[1000px] xl:w-full mx-auto"
         id="pricing"
       >
         <div>
@@ -184,9 +197,6 @@
             >
               Transparente Preise
             </h2>
-            <p class="text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] text-muted">
-              Das passende Paket für dein Vorhaben – ohne versteckte Kosten.
-            </p>
           </header>
 
           <div
@@ -346,7 +356,7 @@
 
       <!-- CONTACT SECTION -->
       <section
-        class="p-[0.8rem] md:p-[1.5rem] xl:max-w-[1000px] xl:w-full mx-auto"
+        class="p-[0.8rem] md:p-[1.5rem] lg:max-w-[1000px] xl:w-full mx-auto"
         id="contact"
       >
         <div>
