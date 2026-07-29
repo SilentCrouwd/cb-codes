@@ -69,6 +69,7 @@
   --color-brand-border: var(--color-border);
   --color-badged-text: var(--color-badged-text);
   --shadow-glow: var(--shadow-glow);
+  --color-glasmorph: var(--color-glass-bg);
   --background-image-brand-gradient: var(--bg-gradient);
   --background-image-text-gradient: var(--text-gradient);
 }
