@@ -1,5 +1,13 @@
 @import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/playwrite-dk-loopet/400.css";
+/* Standard-Schnitt (400) */
+@import "@fontsource/montserrat/400.css";
 
+/* Optional: Weitere Gewichte wie Fett (700) oder Medium (500) */
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/montserrat/700.css";
 /* 1. Deine Variablen direkt hier definieren */
 :root {
   /* Brand Colors & Shadows */
@@ -75,4 +83,17 @@
   --background-image-brand-gradient: var(--bg-gradient);
   --background-image-text-gradient: var(--text-gradient);
   --color-text-article: var(--color-text-article);
+  --font-sans: "Playwrite DK Loopet", cursive;
+}
+@layer base {
+  p,
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  h2 {
+    font-family: "Playwrite DK Loopet", cursive;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+  }
 }
