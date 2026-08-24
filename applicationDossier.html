@@ -54,17 +54,17 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/svg+xml" href="src/assets/img/favicon.svg" />
 
-    <!-- CSS IMPORT (Fonts & Styles) -->
+    <!-- CSS IMPORT -->
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body
-    class="bg-body-bg text-text-article antialiased selection:bg-primary selection:text-badged-text"
+    class="bg-[var(--color-bg)] text-text-article antialiased selection:bg-primary selection:text-badged-text"
   >
     <!-- NAVIGATION -->
     <nav
-      class="sticky top-0 z-50 bg-body-bg/80 backdrop-blur-md border-b border-brand-border/40 py-4 px-4 sm:px-6"
+      class="sticky top-0 z-50 bg-glasmorph backdrop-blur-md border-b border-brand-border py-4 px-4 sm:px-6"
     >
-      <div class="lg:max-w-280 mx-auto flex items-center justify-between">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
         <a
           href="index.html#projects"
           class="inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-primary transition-colors group"
@@ -101,7 +101,7 @@
 
     <!-- MAIN DOSSIER CONTENT -->
     <main
-      class="lg:max-w-280 mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-12 sm:space-y-16"
+      class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-12 sm:space-y-16"
     >
       <!-- 1. HERO HEADER -->
       <header class="space-y-8">
@@ -115,7 +115,7 @@
             <span class="text-xs text-muted">● Next-Gen Job Application</span>
           </div>
 
-          <!-- H1 (greift Montserrat via style.css) -->
+          <!-- H1 (greift Montserrat via @layer base) -->
           <h1
             class="text-main text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight"
           >
@@ -123,6 +123,7 @@
             Landingpage
           </h1>
 
+          <!-- P (greift Inter via @layer base) -->
           <p class="text-muted text-lg sm:text-xl max-w-3xl leading-relaxed">
             Das digitale Bewerbungs-Template der nächsten Generation.
           </p>
@@ -130,7 +131,7 @@
 
         <!-- EXECUTIVE SUMMARY BOX -->
         <div
-          class="bg-box p-6 sm:p-8 rounded-2xl border border-brand-border/40 shadow-glow space-y-3"
+          class="bg-box p-6 sm:p-8 rounded-2xl border border-brand-border shadow-glow space-y-3"
         >
           <span
             class="block text-xs text-primary uppercase font-bold tracking-wider"
@@ -150,7 +151,7 @@
       <!-- 2. DIE 5 USPs -->
       <section class="space-y-6">
         <div class="space-y-2">
-          <!-- H2 (greift Playwrite DK Loopet via style.css) -->
+          <!-- H2 (greift Playwrite DK Loopet via @layer base) -->
           <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
             Die 5 unschlagbaren Verkaufsargumente
           </h2>
@@ -163,7 +164,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- USP 1 -->
           <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border/30 md:col-span-2 space-y-4"
+            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border md:col-span-2 space-y-4"
           >
             <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
               <svg
@@ -201,7 +202,7 @@
 
           <!-- USP 2 -->
           <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border/30 space-y-4"
+            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
           >
             <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
               <svg
@@ -228,7 +229,7 @@
 
           <!-- USP 3 -->
           <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border/30 space-y-4"
+            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
           >
             <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
               <svg
@@ -258,7 +259,7 @@
 
           <!-- USP 4 -->
           <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border/30 space-y-4"
+            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
           >
             <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
               <svg
@@ -277,10 +278,11 @@
             </h3>
             <p class="text-muted text-sm leading-relaxed">
               Semantischer HTML5-Aufbau (<code
-                class="text-xs bg-brand-border/30 px-1 py-0.5 rounded"
+                class="text-xs bg-primary/10 text-primary px-1.5 py-0.5 rounded"
                 >&lt;main&gt;</code
               >,
-              <code class="text-xs bg-brand-border/30 px-1 py-0.5 rounded"
+              <code
+                class="text-xs bg-primary/10 text-primary px-1.5 py-0.5 rounded"
                 >&lt;section&gt;</code
               >) sichert die optimale Nutzung auf allen Endgeräten.
             </p>
@@ -288,7 +290,7 @@
 
           <!-- USP 5 -->
           <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border/30 space-y-4"
+            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
           >
             <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
               <svg
@@ -317,15 +319,14 @@
 
       <!-- 3. ZIELGRUPPEN & ANWENDUNGSBEREICHE -->
       <section
-        class="bg-box p-6 sm:p-8 rounded-2xl shadow-glow border border-brand-border/30 space-y-6"
+        class="bg-box p-6 sm:p-8 rounded-2xl shadow-glow border border-brand-border space-y-6"
       >
-        <!-- H2 (greift Playwrite DK Loopet via style.css) -->
         <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
           Zielgruppen & Anwendungsbereiche
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div
-            class="p-4 rounded-xl bg-brand-border/10 border border-brand-border/30 space-y-2"
+            class="p-4 rounded-xl bg-primary/5 border border-brand-border space-y-2"
           >
             <h3 class="font-bold text-text-article">
               Führungskräfte & Spezialisten
@@ -336,7 +337,7 @@
             </p>
           </div>
           <div
-            class="p-4 rounded-xl bg-brand-border/10 border border-brand-border/30 space-y-2"
+            class="p-4 rounded-xl bg-primary/5 border border-brand-border space-y-2"
           >
             <h3 class="font-bold text-text-article">Initiativbewerbungen</h3>
             <p class="text-xs text-muted leading-relaxed">
@@ -345,7 +346,7 @@
             </p>
           </div>
           <div
-            class="p-4 rounded-xl bg-brand-border/10 border border-brand-border/30 space-y-2"
+            class="p-4 rounded-xl bg-primary/5 border border-brand-border space-y-2"
           >
             <h3 class="font-bold text-text-article">Freelancer & Berater</h3>
             <p class="text-xs text-muted leading-relaxed">
@@ -358,21 +359,20 @@
 
       <!-- 4. TECHNISCHE SPEZIFIKATIONEN -->
       <section class="space-y-6">
-        <!-- H2 (greift Playwrite DK Loopet via style.css) -->
         <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
           Technische Spezifikationen
         </h2>
         <div
-          class="overflow-x-auto rounded-2xl border border-brand-border/40 bg-box shadow-glow"
+          class="overflow-x-auto rounded-2xl border border-brand-border bg-box shadow-glow"
         >
           <table class="w-full text-left border-collapse text-sm">
             <thead>
-              <tr class="border-b border-brand-border/40 bg-brand-border/10">
+              <tr class="border-b border-brand-border bg-primary/5">
                 <th class="p-4 font-bold text-text-article">Feature</th>
                 <th class="p-4 font-bold text-text-article">Spezifikation</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-brand-border/30 text-muted">
+            <tbody class="divide-y divide-brand-border text-muted">
               <tr>
                 <td class="p-4 font-semibold text-text-article">Architektur</td>
                 <td class="p-4">Pure HTML5, JavaScript (ES Module)</td>
@@ -424,7 +424,7 @@
 
       <!-- 5. PITCH-TEXT & CALL TO ACTION -->
       <section
-        class="bg-box rounded-2xl p-8 sm:p-12 shadow-glow border border-primary/30 text-center space-y-6"
+        class="bg-box rounded-2xl p-8 sm:p-12 shadow-glow border border-primary text-center space-y-6"
       >
         <blockquote
           class="text-lg sm:text-2xl italic font-medium text-text-article max-w-3xl mx-auto leading-relaxed"
@@ -448,7 +448,7 @@
 
     <!-- FOOTER -->
     <footer
-      class="border-t border-brand-border/40 py-8 text-center text-xs text-muted"
+      class="border-t border-brand-border py-8 text-center text-xs text-muted"
     >
       <p>© 2026 Christian Buchholz. Alle Rechte vorbehalten.</p>
     </footer>

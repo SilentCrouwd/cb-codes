@@ -13,6 +13,8 @@ export default defineConfig({
           "./applicationDossier.html",
           import.meta.url,
         ).pathname,
+        restaurantDossier: new URL("./restaurantDossier.html", import.meta.url)
+          .pathname,
       },
     },
   },
