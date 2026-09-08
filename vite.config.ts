@@ -15,6 +15,8 @@ export default defineConfig({
         ).pathname,
         restaurantDossier: new URL("./restaurantDossier.html", import.meta.url)
           .pathname,
+        gewerbeDossier: new URL("./gewerbeDossier.html", import.meta.url)
+          .pathname,
       },
     },
   },
