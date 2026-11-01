@@ -25,3 +25,7 @@ dist-ssr
 
 # Claude Code (lokale, persönliche Einstellungen)
 .claude/settings.local.json
+
+# Arbeitsdateien für Claude Code – nur lokal, nicht im Repo
+*.md
+.claude/
