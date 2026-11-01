@@ -2,7 +2,6 @@
 <html lang="de" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
     <title>cb.codes | Pfeilschnelle Websites & Modernes Webdesign</title>
@@ -20,15 +19,15 @@
     <!-- Canonical URL (Wichtig für Suchmaschinen) -->
     <link rel="canonical" href="https://silentcrouwd.github.io/cb-codes/" />
 
-    <!-- Dynamic Theme Color für mobile Browser-Leisten (Passend zu deinem CSS) -->
+    <!-- Theme Color für mobile Browser-Leisten (= --cb-papier) -->
     <meta
       name="theme-color"
-      content="#f8fafc"
+      content="#f7f8f6"
       media="(prefers-color-scheme: light)"
     />
     <meta
       name="theme-color"
-      content="#0f172a"
+      content="#121a22"
       media="(prefers-color-scheme: dark)"
     />
 
@@ -70,1054 +69,384 @@
       content="https://silentcrouwd.github.io/cb-codes/og-image.jpg"
     />
 
-    <!-- Favicons (Anpassen sobald du dein Logo/Favicon hast) -->
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="stylesheet" href="src/style.css" />
-    <title>cb-codes</title>
   </head>
-  <body
-    class="min-h-screen bg-brand-gradient xl:flex xl:flex-col xl:items-center"
-  >
-    <main class="w-full">
-      <!-- HERO SECTION -->
-      <section class="bg-box min-h-screen flex items-center py-12 md:py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center"
-          >
-            <!-- Linke Spalte: Text & CTAs (7 Spalten) -->
-            <div
-              class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left"
+  <body class="min-h-screen">
+    <main>
+      <!-- HERO SECTION: Textur über die volle Breite, Inhalt im Raster -->
+      <div class="hero-textur">
+        <section
+          class="mx-auto grid min-h-[min(85svh,52rem)] max-w-5xl grid-cols-1 items-center gap-10 px-5 py-16 sm:min-h-svh sm:px-8 lg:grid-cols-12"
+        >
+          <div class="lg:col-span-7">
+            <h1
+              class="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
             >
-              <h1
-                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-article tracking-tight leading-tight"
-              >
-                Für deinen starken
-                <span class="text-primary">digitalen Auftritt</span>
-              </h1>
+              Websites für Betriebe aus der Region – schnell, ehrlich, von Hand
+              gebaut.
+            </h1>
 
-              <p
-                class="mt-6 text-base sm:text-lg lg:text-xl text-muted leading-relaxed max-w-2xl"
-              >
-                Schluss mit veralteten Seiten oder Baukästen, die ewig laden.
-                Gemeinsam bringen wir dein Business ins Netz – mit einem
-                modernen, blitzschnellen Design und echtem Handwerk im
-                Hintergrund.
-              </p>
+            <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-schiefer">
+              Schluss mit veralteten Seiten oder Baukästen, die ewig laden.
+              Gemeinsam bringen wir dein Business ins Netz – mit einem modernen,
+              schnellen Design und echtem Handwerk im Hintergrund.
+            </p>
 
-              <!-- CTA Buttons -->
-              <div
-                class="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
-              >
-                <a
-                  href="#contact"
-                  class="px-8 py-4 rounded-xl bg-primary text-badged-text font-semibold text-center transition-all duration-300 hover:opacity-90 active:scale-95 shadow-lg shadow-primary/25"
-                >
-                  Jetzt anfragen
-                </a>
-                <a
-                  href="#pricing"
-                  class="px-8 py-4 rounded-xl border border-brand-border text-text-article font-semibold text-center backdrop-blur-md transition-all duration-300 hover:bg-brand-border/10 active:scale-95"
-                >
-                  Pakete ansehen
-                </a>
-              </div>
-            </div>
-
-            <!-- Rechte Spalte: Logo / Branding-Grafik (5 Spalten) -->
-            <div class="lg:col-span-5 flex justify-center items-center">
-              <picture class="w-full max-w-sm lg:max-w-none p-4">
-                <source
-                  srcset="src/assets/img/logo_3.webp"
-                  media="(prefers-color-scheme: dark)"
-                />
-                <img
-                  src="src/assets/img/logo_1.webp"
-                  alt="Firmenlogo"
-                  class="w-full h-auto object-contain max-h-75 lg:max-h-100 drop-shadow-xl"
-                />
-              </picture>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#contact" class="btn-primary">Projekt anfragen</a>
+              <a href="#pricing" class="btn-secondary">Preise ansehen</a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- SERVICES SECTION -->
-      <section class="services p-4 md:p-8 max-w-250 mx-auto" id="service">
-        <header class="mb-12 text-center">
-          <h2
-            class="text-main text-3xl sm:text-4xl lg:text-5xl underline decoration-primary font-bold"
-          >
-            Mein Service
+          <!-- Signatur: das eine besondere Element (DESIGN.md) -->
+          <div class="flex justify-center lg:col-span-5 lg:justify-end">
+            <picture class="signatur-animiert w-full max-w-sm lg:max-w-md">
+              <source
+                srcset="src/assets/img/logo_3.webp"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                src="src/assets/img/logo_1.webp"
+                alt="cb.codes design – Logo"
+                width="384"
+                height="256"
+                class="h-auto w-full"
+              />
+            </picture>
+          </div>
+        </section>
+      </div>
+
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <!-- SERVICES SECTION -->
+        <section id="service" class="border-t border-linie py-16">
+          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Was du bekommst
           </h2>
-        </header>
 
-        <!-- Responsive Grid: 1 Col Mobile, 2 Col Tablet, 4 Col Large Screens -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Card 1 -->
-          <article
-            class="shadow-glow bg-box p-6 rounded-xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-20 h-20 mb-4 p-3 bg-brand-border/10 rounded-full flex items-center justify-center"
-            >
-              <img
-                src="src/assets/img/serviceWebsite.webp"
-                alt="Website Icon"
-                class="w-full h-full object-contain"
-              />
+          <dl class="mt-8 divide-y divide-linie">
+            <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+              <dt class="text-lg font-semibold">Moderne Website</dt>
+              <dd class="max-w-[60ch] text-schiefer">
+                Perfekt für kleine Unternehmen: Schlanker Code, der extrem
+                schnell lädt und auf jedem Smartphone gut aussieht.
+              </dd>
             </div>
-            <h3 class="text-lg font-semibold text-text-article mb-2">
-              Moderne & bezahlbare Websites
-            </h3>
-            <p class="text-sm text-muted">
-              Perfekt für kleine Unternehmen: Schlanker Code, der extrem schnell
-              lädt und auf jedem Smartphone perfekt aussieht.
-            </p>
-          </article>
-
-          <!-- Card 2 -->
-          <article
-            class="shadow-glow bg-box p-6 rounded-xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-20 h-20 mb-4 p-3 bg-brand-border/10 rounded-full flex items-center justify-center"
-            >
-              <img
-                src="src/assets/img/serviceSEO.webp"
-                alt="SEO Icon"
-                class="w-full h-full object-contain"
-              />
+            <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+              <dt class="text-lg font-semibold">Gefunden werden</dt>
+              <dd class="max-w-[60ch] text-schiefer">
+                Die schönste Website nützt nichts, wenn sie keiner findet. Ich
+                optimiere deine Seite direkt für lokale Kunden bei Google.
+              </dd>
             </div>
-            <h3 class="text-lg font-semibold text-text-article mb-2">
-              Gefunden werden bei Google
-            </h3>
-            <p class="text-sm text-muted">
-              Die schönste Website nützt nichts, wenn sie keiner findet. Ich
-              optimiere deine Seite direkt für lokale Kunden.
-            </p>
-          </article>
-
-          <!-- Card 3 -->
-          <article
-            class="shadow-glow bg-box p-6 rounded-xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-20 h-20 mb-4 p-3 bg-brand-border/10 rounded-full flex items-center justify-center"
-            >
-              <img
-                src="src/assets/img/ServiceDomain.webp"
-                alt="Domain Icon"
-                class="w-full h-full object-contain"
-              />
+            <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+              <dt class="text-lg font-semibold">Domain & Hosting</dt>
+              <dd class="max-w-[60ch] text-schiefer">
+                Ich richte deine Wunsch-Domain ein und sorge für ein modernes,
+                sicheres Hosting – ganz ohne teure Gebühren.
+              </dd>
             </div>
-            <h3 class="text-lg font-semibold text-text-article mb-2">
-              Domain & Gratis-Hosting
-            </h3>
-            <p class="text-sm text-muted">
-              Ich richte deine Wunsch-Domain ein und sorge für ein modernes,
-              sicheres Hosting – ganz ohne teure Gebühren.
-            </p>
-          </article>
-
-          <!-- Card 4 -->
-          <article
-            class="shadow-glow bg-box p-6 rounded-xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-20 h-20 mb-4 p-3 bg-brand-border/10 rounded-full flex items-center justify-center"
-            >
-              <img
-                src="src/assets/img/servicePersoenlich.webp"
-                alt="Persönlich Icon"
-                class="w-full h-full object-contain"
-              />
+            <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+              <dt class="text-lg font-semibold">Persönlich</dt>
+              <dd class="max-w-[60ch] text-schiefer">
+                Keine anonyme Agentur. Wir entwickeln gemeinsam ein Design, das
+                exakt zu deinem Betrieb passt.
+              </dd>
             </div>
-            <h3 class="text-lg font-semibold text-text-article mb-2">
-              Persönlich & auf Augenhöhe
-            </h3>
-            <p class="text-sm text-muted">
-              Keine anonyme Agentur. Wir entwickeln gemeinsam ein frisches
-              Design, das exakt zu deinem Betrieb passt.
-            </p>
-          </article>
-        </div>
-      </section>
+          </dl>
+        </section>
 
-      <!-- Projekte Section -->
-      <section id="projekte" class="services p-3 md:p-6 lg:max-w-280 mx-auto">
-        <div class="flex flex-col gap-2 mb-8">
-          <h2
-            class="text-main text-3xl sm:text-4xl lg:text-5xl underline decoration-primary font-bold"
-          >
-            Meine Muster
+        <!-- PROJEKTE SECTION -->
+        <section id="projekte" class="border-t border-linie py-16">
+          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Projekte
           </h2>
-        </div>
 
-        <!-- Ein einziger übergeordneter Grid-Container -->
-        <div class="grid grid-cols-1 gap-8 md:gap-10">
-          <!-- Projekt 1: Application Page -->
-          <article
-            class="bg-box rounded-xl p-6 shadow-glow hover:shadow-lg transition-shadow"
-          >
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-              <!-- Bild-Container mit schrägem Hintergrund-Effekt -->
-              <div
-                class="lg:col-span-5 relative flex items-center justify-center p-4 min-h-55"
-              >
-                <div
-                  class="absolute inset-0 bg-brand-border/20 rounded-lg [clip-path:polygon(0_0,_100%_0,_85%_100%,_0_100%)]"
-                ></div>
-                <img
-                  src="src/assets/img/Application_Page.webp"
-                  alt="Preview Application Page"
-                  class="relative z-10 max-h-64 lg:max-h-80 object-contain drop-shadow-md"
-                />
-              </div>
-
-              <!-- Content-Container -->
-              <div
-                class="lg:col-span-7 flex flex-col justify-between space-y-4"
-              >
-                <div>
-                  <h3
-                    class="text-text-article text-2xl lg:text-3xl font-bold mb-2"
-                  >
-                    Landingpage / Application Page
-                  </h3>
-                  <p
-                    class="text-muted text-sm sm:text-base leading-relaxed mb-4"
-                  >
-                    Eine maßgeschneiderte Bewerbungshomepage im angesagten
-                    Bento-Grid-Design: Dieses moderne Layout übersetzt Ihre
-                    Erfolge und Kompetenzen in ein elegantes, hochperformantes
-                    Dashboard. Mit reinem HTML5, Tailwind CSS und blitzschnellen
-                    Ladezeiten stechen Sie im Bewerbungsprozess sofort aus der
-                    Masse heraus.
-                  </p>
-
-                  <!-- Tech Tags -->
-                  <div class="flex flex-wrap gap-2 mb-6">
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >HTML5</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Tailwind CSS</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Vite</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Responsive</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >SEO</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >90+ Speed</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Bento-Grid-Design</span
-                    >
-                  </div>
-                </div>
-
-                <!-- Dossier / Read More Button -->
-                <div class="flex gap-2">
-                  <div>
-                    <a
-                      href="applicationDossier.html"
-                      class="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-badged-text font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      mehr Infos
-                      <svg
-                        class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://silentcrouwd.github.io/application-page/"
-                      class="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-badged-text font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      zur Seite
-                      <svg
-                        class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Projekt 3: Premium / Gastro -->
-          <article
-            class="bg-box rounded-xl p-6 shadow-glow hover:shadow-lg transition-shadow"
-          >
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-              <!-- Bild-Container mit schrägem Hintergrund-Effekt -->
-              <div
-                class="lg:col-span-5 relative flex items-center justify-center p-4 min-h-55"
-              >
-                <div
-                  class="absolute inset-0 bg-brand-border/20 rounded-lg [clip-path:polygon(0_0,_100%_0,_85%_100%,_0_100%)]"
-                ></div>
-                <img
-                  src="src/assets/img/Restaurant_Page.webp"
-                  alt="Preview Restaurant Page"
-                  class="relative z-10 max-h-64 lg:max-h-80 object-contain drop-shadow-md"
-                />
-              </div>
-
-              <!-- Content-Container -->
-              <div
-                class="lg:col-span-7 flex flex-col justify-between space-y-4"
-              >
-                <div>
-                  <h3
-                    class="text-text-article text-2xl lg:text-3xl font-bold mb-2"
-                  >
-                    Homepage / Gastro
-                  </h3>
-                  <p
-                    class="text-muted text-sm sm:text-base leading-relaxed mb-4"
-                  >
-                    Bistro 0511Bites – Ein modernes Webdesign-Konzept für ein
-                    fiktives Bio-Restaurant in Hannover. Entwickelt mit Fokus
-                    auf performantes HTML5, Tailwind CSS und eine durchdachte
-                    UX. Die Seite umfasst eine Landingpage, eine strukturierte
-                    Speisekarte sowie einen rechtssicheren Impressums- und
-                    Datenschutzbereich inklusive optimierter SEO-Meta-Daten.
-                  </p>
-
-                  <!-- Tech Tags -->
-                  <div class="flex flex-wrap gap-2 mb-6">
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >HTML5</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Tailwind CSS</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Vite</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Responsive</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >SEO</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >90+ Speed</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >HumanCrafted</span
-                    >
-                  </div>
-                </div>
-
-                <!-- Dossier / Read More Button -->
-                <div class="flex gap-2">
-                  <div>
-                    <a
-                      href="restaurantDossier.html"
-                      class="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-badged-text font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      mehr Infos
-                      <svg
-                        class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://silentcrouwd.github.io/restaurant_page/"
-                      class="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-badged-text font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      zur Seite
-                      <svg
-                        class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <!-- GewerbePage -->
-          <article
-            class="bg-box rounded-xl p-6 shadow-glow hover:shadow-lg transition-shadow"
-          >
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-              <!-- Bild-Container mit schrägem Hintergrund-Effekt -->
-              <div
-                class="lg:col-span-5 relative flex items-center justify-center p-4 min-h-55"
-              >
-                <div
-                  class="absolute inset-0 bg-brand-border/20 rounded-lg [clip-path:polygon(0_0,_100%_0,_85%_100%,_0_100%)]"
-                ></div>
-                <img
-                  src="src/assets/img/Gewerbe-page.webp"
-                  alt="Preview Restaurant Page"
-                  class="relative z-10 max-h-64 lg:max-h-80 object-contain drop-shadow-md"
-                />
-              </div>
-
-              <!-- Content-Container -->
-              <div
-                class="lg:col-span-7 flex flex-col justify-between space-y-4"
-              >
-                <div>
-                  <h3
-                    class="text-text-article text-2xl lg:text-3xl font-bold mb-2"
-                  >
-                    Premium / Gewerbe
-                  </h3>
-                  <p
-                    class="text-muted text-sm sm:text-base leading-relaxed mb-4"
-                  >
-                    Modernes Webdesign für einen regionalen Handwerksbetrieb mit
-                    Fokus auf Vertrauen, klare Leistungsdarstellung und schnelle
-                    Kontaktaufnahme. Die Seite vermittelt Kompetenz, Nähe zum
-                    Kunden und professionelle Präsenz – ideal für Betriebe, die
-                    in der Region neue Aufträge gewinnen möchten.
-                  </p>
-
-                  <!-- Tech Tags -->
-                  <div class="flex flex-wrap gap-2 mb-6">
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >HTML5</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Tailwind CSS</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Vite</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >Responsive</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >SEO</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >90+ Speed</span
-                    >
-                    <span
-                      class="px-2.5 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
-                      >HumanCrafted</span
-                    >
-                  </div>
-                </div>
-
-                <!-- Dossier / Read More Button -->
-                <div class="flex gap-2">
-                  <div>
-                    <a
-                      href="gewerbeDossier.html"
-                      class="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-badged-text font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      mehr Infos
-                      <svg
-                        class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://silentcrouwd.github.io/gewerbe_page/"
-                      class="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-badged-text font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      zur Seite
-                      <svg
-                        class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- PRICING SECTION -->
-      <section class="services p-3 md:p-6 lg:max-w-280 mx-auto" id="pricing">
-        <div>
-          <header class="mb-10">
-            <h2
-              class="text-main text-3xl sm:text-4xl lg:text-5xl underline decoration-primary font-bold mb-2"
-            >
-              Transparente Preise
-            </h2>
-          </header>
-
-          <div
-            class="mt-8 grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3"
-          >
-            <!-- Paket 1 -->
-            <article
-              class="group relative overflow-hidden p-5 bg-box rounded-2xl w-full shadow-glow border border-brand-border/25 hover:border-primary/50 transition-all duration-300 grid grid-cols-1 grid-rows-[1fr_3fr_1fr] h-150"
-            >
-              <div
-                class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-secondary to-cyan-400"
-              ></div>
-              <div class="self-start">
-                <h3
-                  class="py-2 text-text-article text-xl sm:text-2xl md:text-3xl font-bold"
-                >
-                  Landingpage
+          <div class="mt-10 space-y-16">
+            <!-- Projekt 1: Application Page -->
+            <article class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+              <img
+                src="src/assets/img/Application_Page.webp"
+                alt="Vorschau der Bewerbungs-Landingpage"
+                loading="lazy"
+                class="w-full rounded-xl border border-linie bg-moos object-contain p-4"
+              />
+              <div>
+                <h3 class="text-2xl font-semibold tracking-tight">
+                  Bewerbungs-Landingpage
                 </h3>
-                <p
-                  class="text-muted font-bold italic underline py-[0.2rem] text-md md:text-lg"
-                >
-                  Der Schnelleinstieg
+                <p class="mt-3 max-w-[60ch] leading-relaxed text-schiefer">
+                  Eine maßgeschneiderte Bewerbungshomepage im Bento-Grid-Design:
+                  Das Layout übersetzt Erfolge und Kompetenzen in ein elegantes,
+                  schnelles Dashboard. Damit stechen Bewerber sofort aus der
+                  Masse heraus.
                 </p>
-                <div
-                  class="mt-3 inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-primary font-bold italic text-sm md:text-lg"
-                >
-                  350 € – 490 €
-                </div>
-              </div>
-              <div class="self-center">
-                <p class="text-sm md:text-lg text-muted mb-4">
-                  Ideal für Unternehmen, die gezielt ein einzelnes Produkt, eine
-                  Aktion oder ein Event bewerben möchten.
-                </p>
-                <ul class="text-sm md:text-lg text-muted space-y-1">
-                  <li>• 1 Seite (One-Pager)</li>
-                  <li>• Klarer Fokus auf Kontaktaufnahme</li>
-                  <li>• Pfeilschnelle Ladezeiten</li>
-                  <li>• Optimiert für Mobilgeräte</li>
+                <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technik">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">Tailwind CSS</li>
+                  <li class="tag">Vite</li>
+                  <li class="tag">Bento-Grid</li>
                 </ul>
-              </div>
-              <div class="self-end">
-                <a
-                  href="#contact"
-                  class="group inline-flex items-center gap-1.5 text-secondary font-medium hover:underline"
-                >
-                  Projekt starten
-                  <svg
-                    class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a href="applicationDossier.html" class="btn-primary"
+                    >Details ansehen</a
                   >
-                    <path
-                      d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                    />
-                  </svg>
-                </a>
+                  <a
+                    href="https://silentcrouwd.github.io/application-page/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-secondary"
+                    >Live-Seite öffnen</a
+                  >
+                </div>
               </div>
             </article>
 
-            <!-- Paket 2 -->
-            <article
-              class="group relative overflow-hidden p-5 rounded-2xl bg-box w-full shadow-glow border border-primary/40 ring-1 ring-primary/20 hover:-translate-y-1 transition-all duration-300 grid grid-cols-1 grid-rows-[1fr_3fr_1fr] h-150"
-            >
-              <div
-                class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-secondary to-cyan-400"
-              ></div>
-              <div class="self-start">
-                <h3
-                  class="py-2 text-text-article text-xl sm:text-2xl md:text-3xl font-bold"
-                >
-                  Homepage
+            <!-- Projekt 2: Gastro -->
+            <article class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+              <img
+                src="src/assets/img/Restaurant_Page.webp"
+                alt="Vorschau der Restaurant-Website Bistro 0511Bites"
+                loading="lazy"
+                class="w-full rounded-xl border border-linie bg-moos object-contain p-4 lg:order-2"
+              />
+              <div>
+                <h3 class="text-2xl font-semibold tracking-tight">
+                  Restaurant-Website
                 </h3>
-                <p
-                  class="flex gap-8 text-muted font-bold italic underline py-[0.2rem] text-sm md:text-lg"
-                >
-                  Der Allrounder
-                  <span
-                    class="self-start bg-text-gradient px-2 py-1 text-[10px] font-bold uppercase rounded-full text-white inline-flex items-center mb-1 shadow-md shadow-primary/20"
-                  >
-                    Bestseller
-                  </span>
+                <p class="mt-3 max-w-[60ch] leading-relaxed text-schiefer">
+                  Bistro 0511Bites – ein Webdesign-Konzept für ein fiktives
+                  Bio-Restaurant in Hannover. Mit Landingpage, strukturierter
+                  Speisekarte sowie Impressum und Datenschutz.
                 </p>
-                <div
-                  class="mt-3 inline-flex items-center rounded-full border border-secondary/25 bg-secondary/10 px-3 py-1 text-secondary font-bold italic text-sm md:text-lg"
-                >
-                  650 € – 850 €
+                <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technik">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">Tailwind CSS</li>
+                  <li class="tag">Vite</li>
+                  <li class="tag">SEO</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a href="restaurantDossier.html" class="btn-primary"
+                    >Details ansehen</a
+                  >
+                  <a
+                    href="https://silentcrouwd.github.io/restaurant_page/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-secondary"
+                    >Live-Seite öffnen</a
+                  >
                 </div>
               </div>
-              <div class="self-center">
-                <p class="text-sm md:text-lg text-muted mb-4">
-                  Perfekt für lokale Dienstleister wie Friseure, Kosmetikstudios
-                  oder Physiotherapeuten, die sich professionell präsentieren
-                  wollen.
+            </article>
+
+            <!-- Projekt 3: Gewerbe -->
+            <article class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+              <img
+                src="src/assets/img/Gewerbe-page.webp"
+                alt="Vorschau der Website für einen Handwerksbetrieb"
+                loading="lazy"
+                class="w-full rounded-xl border border-linie bg-moos object-contain p-4"
+              />
+              <div>
+                <h3 class="text-2xl font-semibold tracking-tight">
+                  Handwerksbetrieb
+                </h3>
+                <p class="mt-3 max-w-[60ch] leading-relaxed text-schiefer">
+                  Webdesign für einen regionalen Handwerksbetrieb mit Fokus auf
+                  Vertrauen, klare Leistungsdarstellung und schnelle
+                  Kontaktaufnahme – für Betriebe, die in der Region neue
+                  Aufträge gewinnen möchten.
                 </p>
-                <ul class="text-sm md:text-lg text-muted space-y-1">
-                  <li>• Startseite + 3–4 Unterseiten</li>
-                  <li>• Z.B. Über uns, Leistungen, Galerie</li>
-                  <li>• Komplett individuelles Design</li>
-                  <li>• Einfach erweiterbare Struktur</li>
+                <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technik">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">Tailwind CSS</li>
+                  <li class="tag">Vite</li>
+                  <li class="tag">SEO</li>
                 </ul>
-              </div>
-              <div class="self-end">
-                <a
-                  href="#contact"
-                  class="group inline-flex items-center gap-1.5 text-secondary font-medium hover:underline"
-                >
-                  Meistgewählt
-                  <svg
-                    class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a href="gewerbeDossier.html" class="btn-primary"
+                    >Details ansehen</a
                   >
-                    <path
-                      d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                    />
-                  </svg>
-                </a>
+                  <a
+                    href="https://silentcrouwd.github.io/gewerbe_page/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-secondary"
+                    >Live-Seite öffnen</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing" class="border-t border-linie py-16">
+          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Preise
+          </h2>
+
+          <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <!-- Paket 1 -->
+            <article class="flex flex-col rounded-xl border border-linie p-6">
+              <h3 class="text-xl font-semibold">Landingpage</h3>
+              <p class="text-schiefer">Der Schnelleinstieg</p>
+              <p class="mt-4 text-2xl font-bold">350 – 490 €</p>
+              <p class="mt-4 text-schiefer">
+                Für ein einzelnes Produkt, eine Aktion oder ein Event.
+              </p>
+              <ul class="mt-4 mb-2 space-y-1.5 text-schiefer">
+                <li>1 Seite (One-Pager)</li>
+                <li>Klarer Fokus auf Kontaktaufnahme</li>
+                <li>Schnelle Ladezeiten</li>
+                <li>Optimiert für Mobilgeräte</li>
+              </ul>
+              <div class="mt-auto pt-6">
+                <a href="#contact" class="btn-secondary"
+                  >Landingpage anfragen</a
+                >
+              </div>
+            </article>
+
+            <!-- Paket 2: empfohlen -->
+            <article
+              class="flex flex-col rounded-xl border-2 border-wald bg-moos p-6"
+            >
+              <div class="flex items-baseline justify-between gap-2">
+                <h3 class="text-xl font-semibold">Homepage</h3>
+                <span class="text-sm font-semibold text-wald"
+                  >Meistgewählt</span
+                >
+              </div>
+              <p class="text-schiefer">Der Allrounder</p>
+              <p class="mt-4 text-2xl font-bold">650 – 850 €</p>
+              <p class="mt-4 text-schiefer">
+                Für lokale Dienstleister wie Friseure, Kosmetikstudios oder
+                Physiotherapeuten.
+              </p>
+              <ul class="mt-4 mb-2 space-y-1.5 text-schiefer">
+                <li>Startseite + 3–4 Unterseiten</li>
+                <li>Z. B. Über uns, Leistungen, Galerie</li>
+                <li>Komplett individuelles Design</li>
+                <li>Einfach erweiterbare Struktur</li>
+              </ul>
+              <div class="mt-auto pt-6">
+                <a href="#contact" class="btn-primary">Homepage anfragen</a>
               </div>
             </article>
 
             <!-- Paket 3 -->
-            <article
-              class="group relative overflow-hidden p-5 bg-box rounded-2xl w-full shadow-glow border border-brand-border/25 hover:border-secondary/50 transition-all duration-300 grid grid-cols-1 grid-rows-[1fr_3fr_1fr] h-150"
-            >
-              <div
-                class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-secondary to-cyan-400"
-              ></div>
-              <div class="self-start">
-                <h3
-                  class="py-2 text-text-article text-xl sm:text-2xl md:text-3xl font-bold"
-                >
-                  Premium / Gastro
-                </h3>
-                <p
-                  class="font-bold italic underline py-[0.2rem] text-muted text-sm md:text-lg"
-                >
-                  Der Rundum-Schutz
-                </p>
-                <div
-                  class="mt-3 inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-primary font-bold italic text-sm md:text-lg"
-                >
-                  ab 1.100 €
-                </div>
-              </div>
-              <div class="self-center">
-                <p class="text-sm md:text-lg text-muted mb-4">
-                  Für Restaurants mit digitaler Speisekarte oder Handwerker mit
-                  großem Projekt-Portfolio.
-                </p>
-                <ul class="text-sm md:text-lg text-muted space-y-1">
-                  <li>• Bis zu 8 Unterseiten</li>
-                  <li>• DSGVO-konforme Zwei-Klick-Videolösung</li>
-                  <li>• Erweiterte Custom-Features</li>
-                  <li>• Regionale Google-Optimierung (SEO)</li>
-                </ul>
-              </div>
-              <div class="self-end">
-                <a
-                  href="#contact"
-                  class="group inline-flex items-center gap-1.5 text-secondary font-medium hover:underline"
-                >
-                  Premium anfragen
-                  <svg
-                    class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                    />
-                  </svg>
-                </a>
+            <article class="flex flex-col rounded-xl border border-linie p-6">
+              <h3 class="text-xl font-semibold">Premium / Gastro</h3>
+              <p class="text-schiefer">Der Rundum-Schutz</p>
+              <p class="mt-4 text-2xl font-bold">ab 1.100 €</p>
+              <p class="mt-4 text-schiefer">
+                Für Restaurants mit digitaler Speisekarte oder Handwerker mit
+                großem Projekt-Portfolio.
+              </p>
+              <ul class="mt-4 mb-2 space-y-1.5 text-schiefer">
+                <li>Bis zu 8 Unterseiten</li>
+                <li>DSGVO-konforme Zwei-Klick-Videolösung</li>
+                <li>Erweiterte Funktionen</li>
+                <li>Regionale Google-Optimierung (SEO)</li>
+              </ul>
+              <div class="mt-auto pt-6">
+                <a href="#contact" class="btn-secondary">Premium anfragen</a>
               </div>
             </article>
           </div>
-        </div>
-      </section>
-      <!-- CONTACT SECTION (BENTO GRID) -->
-      <section class="services p-3 md:p-6 lg:max-w-280 mx-auto" id="contact">
-        <div>
-          <header class="mb-10">
-            <h2
-              class="text-main text-3xl sm:text-4xl lg:text-5xl underline decoration-primary font-bold"
-            >
-              Kontakt
-            </h2>
-          </header>
+        </section>
 
-          <!-- Bento Grid Container -->
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Bento Item 1: Hero / Headline & Profil (Span 2 Spalten auf Desktop) -->
-            <article
-              class="bg-box rounded-2xl p-6 shadow-glow md:col-span-2 lg:col-span-2 flex flex-col justify-between relative overflow-hidden group"
-            >
-              <div class="relative z-10 space-y-3">
-                <span
-                  class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary"
-                >
-                  Schnelle Antwort
-                </span>
-                <h3
-                  class="text-text-article text-2xl sm:text-3xl font-bold leading-tight"
-                >
-                  Neue Website oder Re-Design?
-                </h3>
-                <p class="text-muted text-sm sm:text-base leading-relaxed">
-                  Schreib mir einfach – Antwort garantiert innerhalb von 24
-                  Stunden.
-                </p>
-              </div>
-
-              <div
-                class="mt-6 flex items-center gap-4 relative z-10 pt-4 border-t border-brand-border/40"
-              >
-                <!-- Profilbild mit schrägem Hintergrund -->
-                <div
-                  class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center"
-                >
-                  <div
-                    class="absolute inset-0 bg-brand-border/40 rounded-lg [clip-path:polygon(0_0,_100%_0,_85%_100%,_0_100%)]"
-                  ></div>
-                  <img
-                    src="src/assets/img/unnamed.webp"
-                    alt="Christian Buchholz"
-                    class="relative z-10 w-14 h-14 object-cover rounded-md drop-shadow"
-                  />
-                </div>
-                <div>
-                  <p class="text-text-article font-bold text-sm sm:text-base">
-                    Christian Buchholz
-                  </p>
-                  <p class="text-muted text-xs sm:text-sm">
-                    Webentwicklung & Design
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <!-- Bento Item 2: Haupt-CTA E-Mail (Blickfang) -->
-            <a
-              href="mailto:cb.codes.design@gmail.com"
-              class="bg-box rounded-2xl p-6 shadow-glow md:col-span-1 lg:col-span-2 flex flex-col justify-between hover:border-primary/50 border border-transparent transition-all group relative overflow-hidden"
-            >
-              <div class="flex justify-between items-start mb-6">
-                <div
-                  class="p-3 rounded-xl bg-primary text-badged-text shadow-md group-hover:scale-105 transition-transform"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                    ></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <svg
-                  class="w-5 h-5 text-muted group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <span
-                  class="block text-xs text-muted uppercase tracking-wider font-semibold mb-1"
-                  >E-Mail senden</span
-                >
-                <span
-                  class="text-text-article text-lg sm:text-xl font-bold break-all group-hover:text-primary transition-colors"
-                >
-                  cb.codes.design@gmail.com
-                </span>
-              </div>
-            </a>
-
-            <!-- Bento Item 3: Telefon -->
-            <a
-              href="tel:015172111060"
-              class="bg-box rounded-2xl p-6 shadow-glow flex flex-col justify-between hover:border-primary/50 border border-transparent transition-all group"
-            >
-              <div class="flex justify-between items-start mb-4">
-                <div
-                  class="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-badged-text transition-colors"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <span
-                  class="block text-xs text-muted uppercase tracking-wider font-semibold mb-1"
-                  >Anrufen</span
-                >
-                <span
-                  class="text-text-article font-bold text-base group-hover:text-primary transition-colors"
-                >
-                  Mobil
-                </span>
-              </div>
-            </a>
-
-            <!-- Bento Item 4: LinkedIn -->
-            <a
-              href="https://www.linkedin.com/in/christian-buchholz-36aa60234/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="bg-box rounded-2xl p-6 shadow-glow flex flex-col justify-between hover:border-primary/50 border border-transparent transition-all group"
-            >
-              <div class="flex justify-between items-start mb-4">
-                <div
-                  class="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-badged-text transition-colors"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                    ></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                </div>
-                <svg
-                  class="w-4 h-4 text-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <span
-                  class="block text-xs text-muted uppercase tracking-wider font-semibold mb-1"
-                  >LinkedIn</span
-                >
-                <span
-                  class="text-text-article font-bold text-base group-hover:text-primary transition-colors"
-                >
-                  Christian Buchholz
-                </span>
-              </div>
-            </a>
-
-            <!-- Bento Item 5: Instagram -->
-            <a
-              href="https://www.instagram.com/cb.codes.design/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="bg-box rounded-2xl p-6 shadow-glow flex flex-col justify-between hover:border-primary/50 border border-transparent transition-all group"
-            >
-              <div class="flex justify-between items-start mb-4">
-                <div
-                  class="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-badged-text transition-colors"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <rect
-                      x="2"
-                      y="2"
-                      width="20"
-                      height="20"
-                      rx="5"
-                      ry="5"
-                    ></rect>
-                    <path
-                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                    ></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </div>
-                <svg
-                  class="w-4 h-4 text-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <span
-                  class="block text-xs text-muted uppercase tracking-wider font-semibold mb-1"
-                  >Instagram</span
-                >
-                <span
-                  class="text-text-article font-bold text-base group-hover:text-primary transition-colors"
-                >
-                  @cb.codes.design
-                </span>
-              </div>
-            </a>
-
-            <!-- Bento Item 6: GitHub -->
-            <a
-              href="https://github.com/SilentCrouwd/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="bg-box rounded-2xl p-6 shadow-glow flex flex-col justify-between hover:border-primary/50 border border-transparent transition-all group"
-            >
-              <div class="flex justify-between items-start mb-4">
-                <div
-                  class="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-badged-text transition-colors"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                    ></path>
-                  </svg>
-                </div>
-                <svg
-                  class="w-4 h-4 text-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <span
-                  class="block text-xs text-muted uppercase tracking-wider font-semibold mb-1"
-                  >GitHub</span
-                >
-                <span
-                  class="text-text-article font-bold text-base group-hover:text-primary transition-colors"
-                >
-                  SilentCrouwd
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER SECTION -->
-    <footer class="w-full">
-      <div
-        class="gap-8 flex flex-col items-center justify-center text-center min-h-[15rem]"
-      >
-        <div>
-          <p class="text-main text-[1.3rem]">
-            &copy; 2026 Christian Buchholz. Alle Rechte vorbehalten.
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="border-t border-linie py-16">
+          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Schreib mir
+          </h2>
+          <p class="mt-3 max-w-[60ch] text-lg text-schiefer">
+            Neue Website oder Re-Design? Ich antworte innerhalb von 24 Stunden.
           </p>
-        </div>
 
-        <nav aria-label="Rechtliche Links">
-          <ul class="list-none flex gap-8 justify-evenly">
+          <a
+            href="mailto:cb.codes.design@gmail.com"
+            class="mt-8 inline-block break-all text-2xl font-semibold text-wald underline decoration-2 underline-offset-8 hover:decoration-4 sm:text-4xl"
+          >
+            cb.codes.design@gmail.com
+          </a>
+
+          <ul
+            class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-schiefer"
+            aria-label="Weitere Kontaktwege"
+          >
             <li>
-              <a
-                href="/cb-codes/impressum.html"
-                class="no-underline text-[1rem] text-main hover:text-primary transition-colors"
-              >
-                Impressum
-              </a>
+              <a href="tel:015172111060" class="hover:text-wald">Telefon</a>
             </li>
             <li>
               <a
-                href="/cb-codes/impressum.html#datenschutz"
-                class="no-underline text-[1rem] text-main hover:text-primary transition-colors"
+                href="https://www.linkedin.com/in/christian-buchholz-36aa60234/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-wald"
+                >LinkedIn</a
               >
-                Datenschutzerklärung
-              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/cb.codes.design/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-wald"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/SilentCrouwd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-wald"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+
+          <div class="mt-12 flex items-center gap-4">
+            <img
+              src="src/assets/img/unnamed.webp"
+              alt="Christian Buchholz"
+              width="288"
+              height="288"
+              loading="lazy"
+              class="h-16 w-16 rounded-full object-cover"
+            />
+            <div>
+              <p class="font-signatur text-xl">Christian</p>
+              <p class="text-sm text-schiefer">Webentwicklung & Design</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="border-t border-linie">
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-4 px-5 py-10 text-sm text-schiefer sm:flex-row sm:justify-between sm:px-8"
+      >
+        <p>&copy; 2026 Christian Buchholz</p>
+        <nav aria-label="Rechtliche Links">
+          <ul class="flex gap-6">
+            <li>
+              <a href="impressum.html" class="hover:text-wald">Impressum</a>
+            </li>
+            <li>
+              <a href="impressum.html#datenschutz" class="hover:text-wald"
+                >Datenschutzerklärung</a
+              >
             </li>
           </ul>
         </nav>

@@ -1,104 +1,114 @@
 @import "tailwindcss";
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/700.css";
+/* Schriften lokal über Fontsource – keine Anfragen an Google (DSGVO) */
+@import "@fontsource-variable/bricolage-grotesque/index.css";
 @import "@fontsource/playwrite-dk-loopet/400.css";
-/* Standard-Schnitt (400) */
-@import "@fontsource/montserrat/400.css";
 
-/* Optional: Weitere Gewichte wie Fett (700) oder Medium (500) */
-@import "@fontsource/montserrat/500.css";
-@import "@fontsource/montserrat/700.css";
-/* 1. Deine Variablen direkt hier definieren */
+/* Grundstil laut DESIGN.md: Tinte auf Papier + Wald als einzige Akzentfarbe */
 :root {
-  /* Brand Colors & Shadows */
-  --color-text-article: rgb(8, 8, 8);
-  --shadow-glow: 0px 0px 5px 0px var(--color-secondary);
-  --color-primary: #0f766e;
-  --color-badged-text: #e2e8f8;
-  --color-secondary: #2563eb;
-  --bg-gradient: linear-gradient(
-    to bottom right,
-    #15d2eb 0%,
-    #faffff 50%,
-    #05b6fc 100%
-  );
-  --text-gradient: linear-gradient(
-    to bottom right,
-    #0f766e 0%,
-    #1d4ed8 50%,
-    #4338ca 100% /* Dunkelviolett */
-  );
-  --color-gray-box-light: rgba(255, 255, 255, 0.65);
-  --color-gray-box-dark: rgba(30, 41, 59, 0.7);
-
-  /* Dynamisches Theme (Standard: Lightmode) */
-  --color-bg: #f8fafc;
-  --color-text: #0f172a;
-  --color-text-muted: #475569;
-  --color-box: var(--color-gray-box-light);
-  --color-border: var(--color-secondary);
-  --color-glass-bg: rgba(255, 255, 255, 0.4);
-  --color-glass-border: rgba(255, 255, 255, 0.6);
+  --cb-papier: #f7f8f6;
+  --cb-tinte: #16202b;
+  --cb-schiefer: #5b6672;
+  --cb-wald: #0f6b5f;
+  --cb-moos: #e4ece8;
+  --cb-linie: rgb(22 32 43 / 0.12);
+  --cb-auf-wald: #f7f8f6;
 }
 
-/* Automatischer Darkmode (System) */
+/* Darkmode nur über das System */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text-article: white;
-    --color-badged-text: #333a4e;
-    --color-secondary: #38bdf8;
-    --color-primary: #2dd4bf;
-    --color-bg: #0f172a;
-    --color-text: #00013d;
-    --color-text-muted: #b1b1b1;
-    --color-box: var(--color-gray-box-dark);
-    --color-glass-bg: rgba(15, 23, 42, 0.45);
-    --color-glass-border: rgba(255, 255, 255, 0.15);
-    --bg-gradient: linear-gradient(
-      to bottom right,
-      #313131 0%,
-      #38bdf8 50%,
-      #06070f 100%
-    );
-    --text-gradient: linear-gradient(
-      to bottom right,
-      #2dd4bf 0%,
-      #38bdf8 50%,
-      #818cf8 100%
-    );
+    --cb-papier: #121a22;
+    --cb-tinte: #eef1ee;
+    --cb-schiefer: #9aa5b0;
+    --cb-wald: #4fb8a6;
+    --cb-moos: #1c2a2c;
+    --cb-linie: rgb(238 241 238 / 0.14);
+    --cb-auf-wald: #121a22;
   }
 }
 
-/* 2. Anbindung an das Tailwind-Theme */
-@theme {
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-main: var(--color-text);
-  --color-muted: var(--color-text-muted);
-  --color-box: var(--color-box);
-  --color-brand-border: var(--color-border);
-  --color-badged-text: var(--color-badged-text);
-  --shadow-glow: var(--shadow-glow);
-  --color-glasmorph: var(--color-glass-bg);
-  --background-image-brand-gradient: var(--bg-gradient);
-  --background-image-text-gradient: var(--text-gradient);
-  --color-text-article: var(--color-text-article);
-  --font-sans: "Playwrite DK Loopet", cursive;
+@theme inline {
+  --font-sans:
+    "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-signatur: "Playwrite DK Loopet", cursive;
+
+  --color-papier: var(--cb-papier);
+  --color-tinte: var(--cb-tinte);
+  --color-schiefer: var(--cb-schiefer);
+  --color-wald: var(--cb-wald);
+  --color-moos: var(--cb-moos);
+  --color-linie: var(--cb-linie);
+  --color-auf-wald: var(--cb-auf-wald);
 }
+
 @layer base {
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  html {
+    color-scheme: light dark;
   }
-  p,
   body {
-    font-family: "Inter", sans-serif;
+    background-color: var(--cb-papier);
+    color: var(--cb-tinte);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
-  h2 {
-    font-family: "Playwrite DK Loopet", cursive;
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
   }
-  h1 {
-    font-family: "Montserrat", sans-serif;
+  :focus-visible {
+    outline: 2px solid var(--cb-wald);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded px-6 py-3 font-semibold bg-wald text-auf-wald transition-opacity hover:opacity-90;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded px-6 py-3 font-semibold border border-tinte/25 text-tinte transition-colors hover:border-wald hover:text-wald;
+  }
+  .tag {
+    @apply rounded border border-linie px-2 py-0.5 text-sm text-schiefer;
+  }
+}
+
+/* Hero-Hintergrund: Linien wie Schreibpapier, laufen nach unten aus.
+   Liegt im ::before, damit die Maske nicht den Inhalt ausblendet. */
+.hero-textur {
+  position: relative;
+  isolation: isolate;
+}
+.hero-textur::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 calc(2rem - 1px),
+    color-mix(in srgb, var(--cb-linie) 60%, transparent) calc(2rem - 1px) 2rem
+  );
+  mask-image: linear-gradient(to bottom, #000 40%, transparent);
+  pointer-events: none;
+}
+
+/* Der eine Bewegungsmoment: Signatur „schreibt sich“ beim Laden */
+@keyframes signatur-schreiben {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+.signatur-animiert {
+  animation: signatur-schreiben 1.2s cubic-bezier(0.6, 0, 0.3, 1) 0.2s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .signatur-animiert {
+    animation: none;
   }
 }

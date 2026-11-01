@@ -23,7 +23,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://silentcrouwd.github.io/cb-codes/dossier-bistro-0511bites"
+      content="https://silentcrouwd.github.io/cb-codes/restaurantDossier.html"
     />
     <meta
       property="og:title"
@@ -54,95 +54,82 @@
       content="https://silentcrouwd.github.io/cb-codes/og-image.jpg"
     />
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/svg+xml" href="src/assets/img/favicon.svg" />
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://silentcrouwd.github.io/cb-codes/restaurantDossier.html"
+    />
+
+    <!-- Theme Color für mobile Browser-Leisten (= --cb-papier) -->
+    <meta
+      name="theme-color"
+      content="#f7f8f6"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#121a22"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- CSS IMPORT -->
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body
-    class="bg-[var(--color-bg)] text-text-article antialiased selection:bg-primary selection:text-badged-text"
-  >
+  <body>
     <!-- NAVIGATION -->
     <nav
-      class="sticky top-0 z-50 bg-glasmorph backdrop-blur-md border-b border-brand-border py-4 px-4 sm:px-6"
+      class="sticky top-0 z-50 border-b border-linie bg-papier"
+      aria-label="Dossier-Navigation"
     >
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div
+        class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-3 sm:px-8"
+      >
         <a
-          href="index.html#projects"
-          class="inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-primary transition-colors group"
+          href="index.html#projekte"
+          class="text-sm font-semibold text-schiefer hover:text-wald"
+          >← Zurück zu den Projekten</a
         >
-          <svg
-            class="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          Zurück zur Übersicht
-        </a>
-
-        <a
-          href="index.html#contact"
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-badged-text text-sm font-bold shadow-glow hover:opacity-90 transition-opacity"
+        <a href="index.html#contact" class="btn-primary px-4 py-2 text-sm"
+          >Projekt anfragen</a
         >
-          Projekt Anfragen
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
       </div>
     </nav>
 
-    <!-- MAIN DOSSIER CONTENT -->
-    <main
-      class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-12 sm:space-y-16"
-    >
+    <main class="mx-auto max-w-5xl px-5 sm:px-8">
       <!-- 1. HERO HEADER -->
-      <header class="space-y-8">
-        <div class="space-y-4">
-          <div class="flex flex-wrap items-center gap-2">
-            <span
-              class="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary uppercase tracking-wider"
-            >
-              Produktdossier
-            </span>
-            <span class="text-xs text-muted">● Gastronomie-Komplettlösung</span>
-          </div>
-
-          <!-- H1 (Montserrat via @layer base) -->
-          <h1
-            class="text-main text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight"
+      <header class="py-16">
+        <p class="text-sm text-schiefer">
+          Produktdossier · Gastronomie-Komplettlösung
+        </p>
+        <h1
+          class="mt-3 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
+        >
+          Gastronomie-Webauftritt „Bistro 0511Bites“
+        </h1>
+        <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-schiefer">
+          Eine moderne 3-Seiten-Lösung für Restaurants, die mit klarer
+          Präsentation, dunklem Premium-Look und besserer Gäste-Führung mehr
+          Aufmerksamkeit erzeugen wollen.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="index.html#contact" class="btn-primary">Projekt anfragen</a>
+          <a
+            href="https://silentcrouwd.github.io/restaurant_page/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-secondary"
+            >Live-Seite öffnen</a
           >
-            Gastronomie-Webauftritt <br class="hidden sm:inline" />„Bistro
-            0511Bites“
-          </h1>
-
-          <!-- P (Inter via @layer base) -->
-          <p class="text-muted text-lg sm:text-xl max-w-3xl leading-relaxed">
-            Eine moderne 3-Seiten-Lösung für Restaurants, die mit klarer
-            Präsentation, dunklem Premium-Look und besserer Gäste-Führung mehr
-            Aufmerksamkeit erzeugen wollen.
-          </p>
         </div>
 
-        <!-- EXECUTIVE SUMMARY BOX -->
-        <div
-          class="bg-box p-6 sm:p-8 rounded-2xl border border-brand-border shadow-glow space-y-3"
-        >
-          <span
-            class="block text-xs text-primary uppercase font-bold tracking-wider"
-            >Executive Summary</span
-          >
-          <p class="text-text-article text-base sm:text-lg leading-relaxed">
+        <!-- Kurzfassung -->
+        <div class="mt-12 rounded-xl bg-moos p-6 sm:p-8">
+          <h2 class="font-semibold">Kurz gesagt</h2>
+          <p class="mt-2 max-w-[65ch] leading-relaxed">
             Dieses System verbindet eine starke Hauptseite, eine gut
             strukturierte digitale Speisekarte und eine klare rechtliche
             Grundlage. Das Ergebnis ist ein hochwertiger Gastronomie-Auftritt,
@@ -152,363 +139,233 @@
         </div>
       </header>
 
-      <!-- 2. DIE 7 USPs -->
-      <section class="space-y-6">
-        <div class="space-y-2">
-          <!-- H2 (Playwrite DK Loopet via @layer base) -->
-          <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
-            Warum dieser Webauftritt überzeugt
-          </h2>
-          <p class="text-muted text-sm sm:text-base">
-            Für Gastronomiebetriebe, die mit hochwertigem Eindruck, klarer
-            Informationsstruktur und starker mobile Nutzbarkeit mehr Gäste
-            gewinnen wollen.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <!-- USP 1 (Bento Doppel-Kachel) -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border md:col-span-2 space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-              </svg>
+      <!-- 2. USPs -->
+      <section class="border-t border-linie py-16">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+          Warum dieser Webauftritt überzeugt
+        </h2>
+        <p class="mt-3 max-w-[60ch] text-schiefer">
+          Für Gastronomiebetriebe, die mit hochwertigem Eindruck, klarer
+          Informationsstruktur und starker mobiler Nutzbarkeit mehr Gäste
+          gewinnen wollen.
+        </p>
+        <ol class="mt-8 divide-y divide-linie">
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">01</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Stilvolles dunkles Design (Atmosphärisch & Dämmerungs-Optimiert)
+              </h3>
+              <ul class="mt-2 max-w-[60ch] space-y-2 text-schiefer">
+                <li>
+                  <strong class="font-semibold text-tinte"
+                    >Edler Gastronomie-Look:</strong
+                  >
+                  Dunkle Farbtöne verleihen dem Bistro einen modernen,
+                  gemütlichen und hochwertigen Eindruck.
+                </li>
+                <li>
+                  <strong class="font-semibold text-tinte"
+                    >Perfekt für die Abend-Recherche:</strong
+                  >
+                  Gäste suchen meist abends nach Restaurants. Das dunkle Layout
+                  schont die Augen, wirkt auf OLED-Displays extrem brillant und
+                  spart Akku.
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              1. Stilvolles dunkles Design (Atmosphärisch &
-              Dämmerungs-Optimiert)
-            </h3>
-            <ul
-              class="space-y-2 text-muted text-sm sm:text-base list-disc list-inside"
-            >
-              <li>
-                <strong class="text-text-article"
-                  >Edler Gastronomie-Look:</strong
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">02</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Gemessene Performance über 95
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                <strong class="font-semibold text-tinte">Messwert:</strong> Die
+                Website wurde mit Lighthouse geprüft und liegt über 95. Das
+                sorgt für schnelle Ladezeiten, gute Mobile-Performance und eine
+                deutlich angenehmere Nutzung direkt am Tisch oder im mobilen
+                Suchprozess.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">03</span>
+            <div>
+              <h3 class="text-lg font-semibold">Schema.org Rich-Snippets</h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                Google liest Öffnungszeiten, Kontaktdaten, Speisen und Preise
+                nativ aus und hebt das Bistro in der lokalen Suche (z. B. „Bio
+                Restaurant Hannover“) ab.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">04</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Conversion-Optimierung Mobil
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                Instant-Action-Buttons (<code
+                  class="rounded bg-moos px-1.5 py-0.5 text-sm text-tinte"
+                  >tel:</code
                 >
-                Dunkle Farbtöne verleihen dem Bistro einen modernen, gemütlichen
-                und hochwertigen Eindruck.
-              </li>
-              <li>
-                <strong class="text-text-article"
-                  >Perfekt für die Abend-Recherche:</strong
-                >
-                Gäste suchen meist abends nach Restaurants. Das dunkle Layout
-                schont die Augen, wirkt auf OLED-Displays extrem brillant und
-                spart Akku.
-              </li>
-            </ul>
-          </article>
-
-          <!-- USP 2 -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
-                ></polygon>
-              </svg>
+                &
+                <code class="rounded bg-moos px-1.5 py-0.5 text-sm text-tinte"
+                  >mailto:</code
+                >) ermöglichen Tischreservierungen mit nur einem einzigen
+                Tippen.
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              2. Gemessene Performance über 95
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              <strong class="text-text-article">Messwert:</strong> Die Website
-              wurde mit Lighthouse geprüft und liegt über 95. Das sorgt für
-              schnelle Ladezeiten, gute Mobile-Performance und eine deutlich
-              angenehmere Nutzung direkt am Tisch oder im mobilen Suchprozess.
-            </p>
-          </article>
-
-          <!-- USP 3 -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">05</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Appetitanregende Bento-Galerie
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                Setzt Gerichte im dunklen Design farbintensiv in Szene. Dank
+                moderner
+                <code class="rounded bg-moos px-1.5 py-0.5 text-sm text-tinte"
+                  >.webp</code
+                >-Formatierung bleiben Ladezeiten minimal.
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              3. Schema.org Rich-Snippets
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              Google liest Öffnungszeiten, Kontaktdaten, Speisen und Preise
-              nativ aus und hebt das Bistro in der lokalen Suche (z. B. „Bio
-              Restaurant Hannover“) ab.
-            </p>
-          </article>
-
-          <!-- USP 4 -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">06</span>
+            <div>
+              <h3 class="text-lg font-semibold">Social-Media-Ready</h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                Automatische Vorschaukarten (Open Graph & Twitter Cards) mit
+                Bild, Titel und Teaser-Text beim Teilen auf WhatsApp, Instagram
+                oder Facebook.
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              4. Conversion-Optimierung Mobil
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              Instant-Action-Buttons (<code
-                class="text-xs bg-primary/10 text-primary px-1 py-0.5 rounded"
-                >tel:</code
-              >
-              &
-              <code
-                class="text-xs bg-primary/10 text-primary px-1 py-0.5 rounded"
-                >mailto:</code
-              >) ermöglichen Tischreservierungen mit nur einem einzigen Tippen.
-            </p>
-          </article>
-
-          <!-- USP 5 -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">07</span>
+            <div>
+              <h3 class="text-lg font-semibold">Zero Hosting-Kosten & DSGVO</h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                DSGVO- & TMG-konform mit noindex-Schutz. 100 % kostenfrei
+                hostbar auf Vercel, Netlify oder GitHub Pages (keine Server-
+                oder Datenbankkosten).
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              5. Appetitanregende Bento-Galerie
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              Setzt Gerichte im dunklen Design farbintensiv in Szene. Dank
-              moderner
-              <code
-                class="text-xs bg-primary/10 text-primary px-1 py-0.5 rounded"
-                >.webp</code
-              >-Formatierung bleiben Ladezeiten minimal.
-            </p>
-          </article>
-
-          <!-- USP 6 -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="18" cy="5" r="3"></circle>
-                <circle cx="6" cy="12" r="3"></circle>
-                <circle cx="18" cy="19" r="3"></circle>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-text-article">
-              6. Social-Media-Ready
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              Automatische Vorschaukarten (Open Graph & Twitter Cards) mit Bild,
-              Titel und Teaser-Text beim Teilen auf WhatsApp, Instagram oder
-              Facebook.
-            </p>
-          </article>
-
-          <!-- USP 7 -->
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4 md:col-span-2 lg:col-span-1"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-text-article">
-              7. Zero Hosting-Kosten & DSGVO
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              DSGVO- & TMG-konform mit noindex-Schutz. 100 % kostenfrei hostbar
-              auf Vercel, Netlify oder GitHub Pages (keine Server- oder
-              Datenbankkosten).
-            </p>
-          </article>
-        </div>
+          </li>
+        </ol>
       </section>
 
       <!-- 3. AUFBAU DES 3-SEITEN-SYSTEMS -->
-      <section class="space-y-6">
-        <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
+      <section class="border-t border-linie py-16">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
           Aufbau des 3-Seiten-Systems
         </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div
-            class="bg-box p-6 rounded-2xl shadow-glow border border-brand-border space-y-3 flex flex-col justify-between"
-          >
-            <div class="space-y-3">
+        <dl class="mt-8 divide-y divide-linie">
+          <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+            <dt class="text-lg font-semibold">
+              Hauptseite
               <span
-                class="text-xs font-mono px-2.5 py-1 rounded bg-primary/10 text-primary font-bold inline-block"
+                class="mt-1 block font-mono text-sm font-normal text-schiefer"
                 >index.html</span
               >
-              <h3 class="text-lg font-bold text-text-article">Hauptseite</h3>
-              <p
-                class="text-xs text-primary font-semibold uppercase tracking-wider"
-              >
-                Kundengewinnung & Information
-              </p>
-              <p class="text-xs text-muted leading-relaxed">
-                Hero-Banner im dunklen Stil, „Über Uns“-Story,
-                Bento-Bildergalerie, Öffnungszeiten-Grid und
-                Direkt-Kontaktmöglichkeiten.
-              </p>
-            </div>
+            </dt>
+            <dd class="max-w-[60ch] text-schiefer">
+              <span class="block font-semibold text-tinte"
+                >Kundengewinnung & Information</span
+              >Hero-Banner im dunklen Stil, „Über Uns“-Story,
+              Bento-Bildergalerie, Öffnungszeiten-Grid und
+              Direkt-Kontaktmöglichkeiten.
+            </dd>
           </div>
-
-          <div
-            class="bg-box p-6 rounded-2xl shadow-glow border border-brand-border space-y-3 flex flex-col justify-between"
-          >
-            <div class="space-y-3">
+          <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+            <dt class="text-lg font-semibold">
+              Digitales Menü
               <span
-                class="text-xs font-mono px-2.5 py-1 rounded bg-primary/10 text-primary font-bold inline-block"
+                class="mt-1 block font-mono text-sm font-normal text-schiefer"
                 >speisekarte.html</span
               >
-              <h3 class="text-lg font-bold text-text-article">
-                Digitales Menü
-              </h3>
-              <p
-                class="text-xs text-primary font-semibold uppercase tracking-wider"
-              >
-                Umsatzsteigerung & Vorschau
-              </p>
-              <p class="text-xs text-muted leading-relaxed">
-                Strukturierter Speisen-Katalog im dunklen Look mit Preisen,
-                Beschreibungen und integriertem Schema.org-Markup für Google.
-              </p>
-            </div>
+            </dt>
+            <dd class="max-w-[60ch] text-schiefer">
+              <span class="block font-semibold text-tinte"
+                >Umsatzsteigerung & Vorschau</span
+              >Strukturierter Speisen-Katalog im dunklen Look mit Preisen,
+              Beschreibungen und integriertem Schema.org-Markup für Google.
+            </dd>
           </div>
-
-          <div
-            class="bg-box p-6 rounded-2xl shadow-glow border border-brand-border space-y-3 flex flex-col justify-between"
-          >
-            <div class="space-y-3">
+          <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+            <dt class="text-lg font-semibold">
+              Rechtliches
               <span
-                class="text-xs font-mono px-2.5 py-1 rounded bg-primary/10 text-primary font-bold inline-block"
+                class="mt-1 block font-mono text-sm font-normal text-schiefer"
                 >impressum.html</span
               >
-              <h3 class="text-lg font-bold text-text-article">Rechtliches</h3>
-              <p
-                class="text-xs text-primary font-semibold uppercase tracking-wider"
-              >
-                Absicherung & Compliance
-              </p>
-              <p class="text-xs text-muted leading-relaxed">
-                Rechtssicheres Impressum, DSGVO-Datenschutzerklärung und
-                Suchmaschinen-Isolierung via noindex-Tag.
-              </p>
-            </div>
+            </dt>
+            <dd class="max-w-[60ch] text-schiefer">
+              <span class="block font-semibold text-tinte"
+                >Absicherung & Compliance</span
+              >Rechtssicheres Impressum, DSGVO-Datenschutzerklärung und
+              Suchmaschinen-Isolierung via noindex-Tag.
+            </dd>
           </div>
-        </div>
+        </dl>
       </section>
 
-      <!-- 4. TECHNISCHE KENNZAHLEN -->
-      <section class="space-y-6">
-        <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
+      <!-- 4. TECHNIK -->
+      <section class="border-t border-linie py-16">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
           Technische Kennzahlen im Überblick
         </h2>
-        <div
-          class="overflow-x-auto rounded-2xl border border-brand-border bg-box shadow-glow"
-        >
-          <table class="w-full text-left border-collapse text-sm">
+        <div class="mt-8 overflow-x-auto rounded-xl border border-linie">
+          <table class="w-full border-collapse text-left">
             <thead>
-              <tr class="border-b border-brand-border bg-primary/5">
-                <th class="p-4 font-bold text-text-article">
-                  Metrik / Bereich
-                </th>
-                <th class="p-4 font-bold text-text-article">
+              <tr class="border-b border-linie bg-moos">
+                <th scope="col" class="p-4 font-semibold">Metrik / Bereich</th>
+                <th scope="col" class="p-4 font-semibold">
                   Zielwert / Spezifikation
                 </th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-brand-border text-muted">
+            <tbody class="divide-y divide-linie text-schiefer">
               <tr>
-                <td class="p-4 font-semibold text-text-article">Design-Stil</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">
+                  Design-Stil
+                </th>
                 <td class="p-4">
                   Premium Dark-Design (Dunkles Theme mit Akzentfarben)
                 </td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">
+                <th scope="row" class="p-4 font-semibold text-tinte">
                   Ladezeit / Performance
-                </td>
+                </th>
                 <td class="p-4">
-                  <span
-                    class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-primary/10 text-primary"
-                    >95+</span
-                  >
-                  und höher, gemessen mit Lighthouse
+                  <strong class="font-semibold text-wald">95+</strong>, gemessen
+                  mit Lighthouse
                 </td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">SEO</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">SEO</th>
                 <td class="p-4">
                   Strukturierte Inhalte und lokale Restaurant-Optimierung
                 </td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">
+                <th scope="row" class="p-4 font-semibold text-tinte">
                   Barrierefreiheit
-                </td>
+                </th>
                 <td class="p-4">
                   Gute Kontraste, klare Struktur und semantisches HTML5
                 </td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">
+                <th scope="row" class="p-4 font-semibold text-tinte">
                   Technologie-Stack
-                </td>
+                </th>
                 <td class="p-4">Pure HTML5, Tailwind CSS, ES-Module</td>
               </tr>
             </tbody>
@@ -517,34 +374,42 @@
       </section>
 
       <!-- 5. PITCH-TEXT & CALL TO ACTION -->
-      <section
-        class="bg-box rounded-2xl p-8 sm:p-12 shadow-glow border border-primary text-center space-y-6"
-      >
+      <section class="border-t border-linie py-16">
         <blockquote
-          class="text-lg sm:text-2xl italic font-medium text-text-article max-w-3xl mx-auto leading-relaxed"
+          class="max-w-[50ch] text-xl font-medium leading-relaxed sm:text-2xl"
         >
           „Ein gedruckter Aufsteller reicht für moderne Gäste nicht mehr aus.
           Dieses 3-Seiten-Paket verbindet ein hochwertiges dunkles Design mit
           klarer Informationsstruktur, schneller Ladezeit und gutem
           Suchmaschinen-Setup – ohne laufende Software- oder Hosting-Kosten.“
         </blockquote>
-
-        <div class="pt-4">
-          <a
-            href="index.html#contact"
-            class="inline-block px-8 py-4 rounded-xl bg-primary text-badged-text font-bold text-lg shadow-glow hover:opacity-90 transition-opacity"
+        <div class="mt-8">
+          <a href="index.html#contact" class="btn-primary"
+            >Jetzt System anfragen</a
           >
-            Jetzt System anfragen
-          </a>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer
-      class="border-t border-brand-border py-8 text-center text-xs text-muted"
-    >
-      <p>© 2026 Christian Buchholz. Alle Rechte vorbehalten.</p>
+    <!-- FOOTER (wie index.html) -->
+    <footer class="border-t border-linie">
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-4 px-5 py-10 text-sm text-schiefer sm:flex-row sm:justify-between sm:px-8"
+      >
+        <p>&copy; 2026 Christian Buchholz</p>
+        <nav aria-label="Rechtliche Links">
+          <ul class="flex gap-6">
+            <li>
+              <a href="impressum.html" class="hover:text-wald">Impressum</a>
+            </li>
+            <li>
+              <a href="impressum.html#datenschutz" class="hover:text-wald"
+                >Datenschutzerklärung</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

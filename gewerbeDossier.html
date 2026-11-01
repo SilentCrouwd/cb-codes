@@ -20,7 +20,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://silentcrouwd.github.io/cb-codes/gewerbe-dossier"
+      content="https://silentcrouwd.github.io/cb-codes/gewerbeDossier.html"
     />
     <meta
       property="og:title"
@@ -50,85 +50,78 @@
       content="https://silentcrouwd.github.io/cb-codes/og-image.jpg"
     />
 
-    <link rel="icon" type="image/svg+xml" href="src/assets/img/favicon.svg" />
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://silentcrouwd.github.io/cb-codes/gewerbeDossier.html"
+    />
+
+    <!-- Theme Color für mobile Browser-Leisten (= --cb-papier) -->
+    <meta
+      name="theme-color"
+      content="#f7f8f6"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#121a22"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body
-    class="bg-[var(--color-bg)] text-text-article antialiased selection:bg-primary selection:text-badged-text"
-  >
+  <body>
+    <!-- NAVIGATION -->
     <nav
-      class="sticky top-0 z-50 bg-glasmorph backdrop-blur-md border-b border-brand-border py-4 px-4 sm:px-6"
+      class="sticky top-0 z-50 border-b border-linie bg-papier"
+      aria-label="Dossier-Navigation"
     >
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div
+        class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-3 sm:px-8"
+      >
         <a
-          href="index.html#projects"
-          class="inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-primary transition-colors group"
+          href="index.html#projekte"
+          class="text-sm font-semibold text-schiefer hover:text-wald"
+          >← Zurück zu den Projekten</a
         >
-          <svg
-            class="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          Zurück zur Übersicht
-        </a>
-
-        <a
-          href="index.html#contact"
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-badged-text text-sm font-bold shadow-glow hover:opacity-90 transition-opacity"
+        <a href="index.html#contact" class="btn-primary px-4 py-2 text-sm"
+          >Projekt anfragen</a
         >
-          Projekt Anfragen
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
       </div>
     </nav>
 
-    <main
-      class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-12 sm:space-y-16"
-    >
-      <header class="space-y-8">
-        <div class="space-y-4">
-          <div class="flex flex-wrap items-center gap-2">
-            <span
-              class="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary uppercase tracking-wider"
-            >
-              Produktdossier
-            </span>
-            <span class="text-xs text-muted">● Gewerbe & Handwerk</span>
-          </div>
-
-          <h1
-            class="text-main text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight"
+    <main class="mx-auto max-w-5xl px-5 sm:px-8">
+      <!-- 1. HERO HEADER -->
+      <header class="py-16">
+        <p class="text-sm text-schiefer">Produktdossier · Gewerbe & Handwerk</p>
+        <h1
+          class="mt-3 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
+        >
+          Gewerbe-Website für Handwerksbetrieb
+        </h1>
+        <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-schiefer">
+          Eine moderne, klare und überzeugende Online-Präsenz für lokale
+          Handwerksbetriebe mit Fokus auf Vertrauen, Reichweite und schnelle
+          Kontaktaufnahme.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="index.html#contact" class="btn-primary">Projekt anfragen</a>
+          <a
+            href="https://silentcrouwd.github.io/gewerbe_page/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-secondary"
+            >Live-Seite öffnen</a
           >
-            Gewerbe-Website für <br class="hidden sm:inline" />Handwerksbetrieb
-          </h1>
-
-          <p class="text-muted text-lg sm:text-xl max-w-3xl leading-relaxed">
-            Eine moderne, klare und überzeugende Online-Präsenz für lokale
-            Handwerksbetriebe mit Fokus auf Vertrauen, Reichweite und schnelle
-            Kontaktaufnahme.
-          </p>
         </div>
 
-        <div
-          class="bg-box p-6 sm:p-8 rounded-2xl border border-brand-border shadow-glow space-y-3"
-        >
-          <span
-            class="block text-xs text-primary uppercase font-bold tracking-wider"
-            >Executive Summary</span
-          >
-          <p class="text-text-article text-base sm:text-lg leading-relaxed">
+        <!-- Kurzfassung -->
+        <div class="mt-12 rounded-xl bg-moos p-6 sm:p-8">
+          <h2 class="font-semibold">Kurz gesagt</h2>
+          <p class="mt-2 max-w-[65ch] leading-relaxed">
             Dieses System eignet sich für Handwerksbetriebe, die professionell,
             verständlich und lokal wirksam auftreten möchten. Die Seite zeigt
             Leistungen sauber, stärkt das Vertrauen in das Unternehmen und macht
@@ -138,244 +131,174 @@
         </div>
       </header>
 
-      <section class="space-y-6">
-        <div class="space-y-2">
-          <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
-            Warum dieser Webauftritt überzeugt
-          </h2>
-          <p class="text-muted text-sm sm:text-base">
-            Für Betriebe, die mit klarer Positionierung, sauberem Design und
-            starkem regionalem Eindruck neue Kunden gewinnen wollen.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border md:col-span-2 space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <rect x="3" y="3" width="7" height="7" rx="1"></rect>
-                <rect x="14" y="3" width="7" height="7" rx="1"></rect>
-                <rect x="14" y="14" width="7" height="7" rx="1"></rect>
-                <rect x="3" y="14" width="7" height="7" rx="1"></rect>
-              </svg>
+      <!-- 2. USPs -->
+      <section class="border-t border-linie py-16">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+          Warum dieser Webauftritt überzeugt
+        </h2>
+        <p class="mt-3 max-w-[60ch] text-schiefer">
+          Für Betriebe, die mit klarer Positionierung, sauberem Design und
+          starkem regionalem Eindruck neue Kunden gewinnen wollen.
+        </p>
+        <ol class="mt-8 divide-y divide-linie">
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">01</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Professioneller Eindruck auf einen Blick
+              </h3>
+              <ul class="mt-2 max-w-[60ch] space-y-2 text-schiefer">
+                <li>
+                  <strong class="font-semibold text-tinte"
+                    >Vertrauen durch Klarheit:</strong
+                  >
+                  Leistungen, Qualitätsversprechen und Kontaktpunkte werden
+                  direkt verständlich dargestellt.
+                </li>
+                <li>
+                  <strong class="font-semibold text-tinte"
+                    >Regionaler Mehrwert:</strong
+                  >
+                  Kunden erkennen schnell, worin die Stärke des Betriebs liegt –
+                  von Qualität bis zur Nähe vor Ort.
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              1. Professioneller Eindruck auf einen Blick
-            </h3>
-            <ul
-              class="space-y-2 text-muted text-sm sm:text-base list-disc list-inside"
-            >
-              <li>
-                <strong class="text-text-article"
-                  >Vertrauen durch Klarheit:</strong
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">02</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Gemessene Performance über 95
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                <strong class="font-semibold text-tinte">Messwert:</strong> Die
+                Seite wurde mit Lighthouse geprüft und liegt deutlich über 95.
+                Das spart Ladezeit, verbessert die Nutzerfreundlichkeit und
+                wirkt sich direkt auf das Vertrauen der Kunden aus.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">03</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Suchmaschinen- und Social-Optimierung
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                <strong class="font-semibold text-tinte"
+                  >Mehr Sichtbarkeit:</strong
                 >
-                Leistungen, Qualitätsversprechen und Kontaktpunkte werden direkt
-                verständlich dargestellt.
-              </li>
-              <li>
-                <strong class="text-text-article">Regionaler Mehrwert:</strong>
-                Kunden erkennen schnell, worin die Stärke des Betriebs liegt –
-                von Qualität bis zur Nähe vor Ort.
-              </li>
-            </ul>
-          </article>
-
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
-                ></polygon>
-              </svg>
+                Optimierte Meta-Tags, passende Suchbegriffe und starke
+                Vorschauen beim Teilen machen die Seite für Google und soziale
+                Netzwerke deutlich besser nutzbar.
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              2. Gemessene Performance über 95
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              <strong class="text-text-article">Messwert:</strong> Die Seite
-              wurde mit Lighthouse geprüft und liegt deutlich über 95. Das spart
-              Ladezeit, verbessert die Nutzerfreundlichkeit und wirkt sich
-              direkt auf das Vertrauen der Kunden aus.
-            </p>
-          </article>
-
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                ></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">04</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Mobil optimiert für spontane Anfragen
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                Viele Kunden suchen von unterwegs nach einem passenden Betrieb.
+                Telefon- und E-Mail-Buttons sind sofort sichtbar, gut erreichbar
+                und auf Smartphones besonders leicht nutzbar.
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              3. Suchmaschinen- und Social-Optimierung
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              <strong class="text-text-article">Mehr Sichtbarkeit:</strong>
-              Optimierte Meta-Tags, passende Suchbegriffe und starke Vorschauen
-              beim Teilen machen die Seite für Google und soziale Netzwerke
-              deutlich besser nutzbar.
-            </p>
-          </article>
-
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 8v4l3 3"></path>
-              </svg>
+          </li>
+          <li class="grid gap-2 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <span class="text-lg font-semibold text-wald tabular-nums">05</span>
+            <div>
+              <h3 class="text-lg font-semibold">
+                Keine laufenden Kosten für Hosting & CMS
+              </h3>
+              <p class="mt-2 max-w-[60ch] text-schiefer">
+                Die Lösung ist leicht zu hosten und lässt sich kosteneffizient
+                auf Plattformen wie GitHub Pages, Netlify oder Vercel betreiben
+                – ohne teure monatliche Abonnements.
+              </p>
             </div>
-            <h3 class="text-xl font-bold text-text-article">
-              4. Mobil optimiert für spontane Anfragen
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              Viele Kunden suchen von unterwegs nach einem passenden Betrieb.
-              Telefon- und E-Mail-Buttons sind sofort sichtbar, gut erreichbar
-              und auf Smartphones besonders leicht nutzbar.
-            </p>
-          </article>
-
-          <article
-            class="bg-box rounded-2xl p-6 shadow-glow border border-brand-border space-y-4"
-          >
-            <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path
-                  d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-text-article">
-              5. Keine laufenden Kosten für Hosting & CMS
-            </h3>
-            <p class="text-muted text-sm leading-relaxed">
-              Die Lösung ist leicht zu hosten und lässt sich kosteneffizient auf
-              Plattformen wie GitHub Pages, Netlify oder Vercel betreiben – ohne
-              teure monatliche Abonnements.
-            </p>
-          </article>
-        </div>
+          </li>
+        </ol>
       </section>
 
-      <section
-        class="bg-box p-6 sm:p-8 rounded-2xl shadow-glow border border-brand-border space-y-6"
-      >
-        <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
+      <!-- 3. TYPISCHE INHALTE -->
+      <section class="border-t border-linie py-16">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
           Typische Inhalte für Handwerksbetriebe
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div
-            class="p-4 rounded-xl bg-primary/5 border border-brand-border space-y-2"
-          >
-            <h3 class="font-bold text-text-article">Leistungen</h3>
-            <p class="text-xs text-muted leading-relaxed">
+        <dl class="mt-8 divide-y divide-linie">
+          <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+            <dt class="text-lg font-semibold">Leistungen</dt>
+            <dd class="max-w-[60ch] text-schiefer">
               Klar gegliedert in Reparatur, Ausbau, Sanierung, Montage und
               individuelle Serviceleistungen.
-            </p>
+            </dd>
           </div>
-          <div
-            class="p-4 rounded-xl bg-primary/5 border border-brand-border space-y-2"
-          >
-            <h3 class="font-bold text-text-article">Vertrauen</h3>
-            <p class="text-xs text-muted leading-relaxed">
+          <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+            <dt class="text-lg font-semibold">Vertrauen</dt>
+            <dd class="max-w-[60ch] text-schiefer">
               Über uns, Qualitätsprinzipien, Erfahrungswerte und verständliche
               Informationen zum Betrieb.
-            </p>
+            </dd>
           </div>
-          <div
-            class="p-4 rounded-xl bg-primary/5 border border-brand-border space-y-2"
-          >
-            <h3 class="font-bold text-text-article">Kontakt</h3>
-            <p class="text-xs text-muted leading-relaxed">
+          <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8">
+            <dt class="text-lg font-semibold">Kontakt</dt>
+            <dd class="max-w-[60ch] text-schiefer">
               Telefon, E-Mail, Standort und schnelle Anfragefunktion mit klarer
               Call-to-Action-Strategie.
-            </p>
+            </dd>
           </div>
-        </div>
+        </dl>
       </section>
 
-      <section class="space-y-6">
-        <h2 class="text-2xl sm:text-4xl text-text-article leading-relaxed">
+      <!-- 4. TECHNIK -->
+      <section class="border-t border-linie py-16">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
           Technische Spezifikationen
         </h2>
-        <div
-          class="overflow-x-auto rounded-2xl border border-brand-border bg-box shadow-glow"
-        >
-          <table class="w-full text-left border-collapse text-sm">
+        <div class="mt-8 overflow-x-auto rounded-xl border border-linie">
+          <table class="w-full border-collapse text-left">
             <thead>
-              <tr class="border-b border-brand-border bg-primary/5">
-                <th class="p-4 font-bold text-text-article">Feature</th>
-                <th class="p-4 font-bold text-text-article">Spezifikation</th>
+              <tr class="border-b border-linie bg-moos">
+                <th scope="col" class="p-4 font-semibold">Feature</th>
+                <th scope="col" class="p-4 font-semibold">Spezifikation</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-brand-border text-muted">
+            <tbody class="divide-y divide-linie text-schiefer">
               <tr>
-                <td class="p-4 font-semibold text-text-article">Architektur</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">
+                  Architektur
+                </th>
                 <td class="p-4">Pure HTML5, JavaScript (ES Module)</td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">Styling</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">
+                  Styling
+                </th>
                 <td class="p-4">Tailwind CSS, responsive Layout-System</td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">Zielgruppe</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">
+                  Zielgruppe
+                </th>
                 <td class="p-4">
                   Lokale Betriebe, Handwerksunternehmen, Dienstleister
                 </td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">Performance</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">
+                  Performance
+                </th>
                 <td class="p-4">
-                  <span
-                    class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-primary/10 text-primary"
-                    >95+</span
-                  >
-                  gemessen mit Lighthouse
+                  <strong class="font-semibold text-wald">95+</strong>, gemessen
+                  mit Lighthouse
                 </td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-text-article">SEO</td>
+                <th scope="row" class="p-4 font-semibold text-tinte">SEO</th>
                 <td class="p-4">
                   Klare Inhalte, passende Keywords und lokaler Fokus
                 </td>
@@ -385,33 +308,43 @@
         </div>
       </section>
 
-      <section
-        class="bg-box rounded-2xl p-8 sm:p-12 shadow-glow border border-primary text-center space-y-6"
-      >
+      <!-- 5. PITCH-TEXT & CALL TO ACTION -->
+      <section class="border-t border-linie py-16">
         <blockquote
-          class="text-lg sm:text-2xl italic font-medium text-text-article max-w-3xl mx-auto leading-relaxed"
+          class="max-w-[50ch] text-xl font-medium leading-relaxed sm:text-2xl"
         >
           „Viele Handwerksbetriebe verlieren Kunden, weil ihr Auftritt im Netz
           nicht überzeugt. Diese Website schafft den Unterschied: klar,
           professionell und leicht erreichbar – mit einem starken Eindruck auf
           Smartphone und Desktop, ohne teure Software- oder Hosting-Kosten.“
         </blockquote>
-
-        <div class="pt-4">
-          <a
-            href="index.html#contact"
-            class="inline-block px-8 py-4 rounded-xl bg-primary text-badged-text font-bold text-lg shadow-glow hover:opacity-90 transition-opacity"
+        <div class="mt-8">
+          <a href="index.html#contact" class="btn-primary"
+            >Jetzt Angebot anfragen</a
           >
-            Jetzt Angebot anfragen
-          </a>
         </div>
       </section>
     </main>
 
-    <footer
-      class="border-t border-brand-border py-8 text-center text-xs text-muted"
-    >
-      <p>© 2026 Christian Buchholz. Alle Rechte vorbehalten.</p>
+    <!-- FOOTER (wie index.html) -->
+    <footer class="border-t border-linie">
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-4 px-5 py-10 text-sm text-schiefer sm:flex-row sm:justify-between sm:px-8"
+      >
+        <p>&copy; 2026 Christian Buchholz</p>
+        <nav aria-label="Rechtliche Links">
+          <ul class="flex gap-6">
+            <li>
+              <a href="impressum.html" class="hover:text-wald">Impressum</a>
+            </li>
+            <li>
+              <a href="impressum.html#datenschutz" class="hover:text-wald"
+                >Datenschutzerklärung</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
